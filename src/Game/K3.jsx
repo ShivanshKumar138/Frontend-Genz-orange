@@ -332,7 +332,7 @@ const RowVisualization = ({ data }) => {
           display: "flex",
           flexDirection: "row",
           fontWeight: "bold",
-          backgroundColor: "#4782ff",
+          backgroundColor: "rgb(254,134,37)",
           color: "white",
           height: "40px",
           alignItems: "center",
@@ -1702,7 +1702,7 @@ const LotteryAppk = ({ timerKey }) => {
               position: "sticky",
               top: 0,
               zIndex: 1000,
-              background: "linear-gradient(90deg, #4782ff 0%, #59adff 100%)",
+              background: "rgb(254,134,37)",
               padding: "8px 16px",
               color: "white",
             }}
@@ -1740,7 +1740,7 @@ const LotteryAppk = ({ timerKey }) => {
             direction="column"
             sx={{
               height: "300px",
-              background: "linear-gradient(90deg, #4782ff 0%, #59adff 100%)",
+              background: "rgb(254,134,37)",
               borderRadius: "0 0 70px 70px",
               textAlign: "center",
             }}
@@ -1881,9 +1881,9 @@ const LotteryAppk = ({ timerKey }) => {
               <Button
                 variant="contained"
                 sx={{
-                  background: "linear-gradient(90deg, #4782ff 0%, #59adff 100%)",
+                  background: "rgb(254,134,37)",
                   "&:hover": {
-                    background: "linear-gradient(90deg, #4782ff 0%, #59adff 100%)",
+                    background: "rgb(254,134,37)",
                   },
                   borderRadius: "50px",
                   fontSize: "11px",
@@ -1921,7 +1921,7 @@ const LotteryAppk = ({ timerKey }) => {
                   cursor: "pointer",
                   background:
                     activeId === image.id
-                      ? "linear-gradient(to bottom, #4782ff, #4782ff)"
+                      ? "rgb(254,134,37)"
                       : "transparent",
                   borderRadius: "10px",
                   display: "flex",

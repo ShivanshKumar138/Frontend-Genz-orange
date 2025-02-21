@@ -753,7 +753,7 @@ const LotteryAppt = ({ timerKey }) => {
               position: "sticky",
               top: 0,
               zIndex: 5000,
-              background: "linear-gradient(90deg, #4782ff 0%, #59adff 100%)",
+              background: "rgb(254,134,37)",
               padding: "8px 16px",
               color: "white",
             }}
