@@ -15,7 +15,7 @@ const RowVisualization = ({ data }) => {
       <div
         style={{
           display: "flex",
-          backgroundColor: "#4782ff",
+          backgroundColor: "rgb(255,142,40)",
           padding: "10px",
           fontWeight: "bold",
           color: "white",

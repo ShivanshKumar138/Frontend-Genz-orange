@@ -1035,7 +1035,7 @@ const FiveD = ({ timerKey }) => {
               position: "sticky",
               top: 0,
               zIndex: 5000,
-              background: "linear-gradient(90deg, #4782ff 0%, #59adff 100%)",
+              background: "rgb(255,142,40)",
               padding: "8px 16px",
               color: "white",
             }}
@@ -1071,7 +1071,7 @@ const FiveD = ({ timerKey }) => {
             direction="column"
             sx={{
               height: "300px",
-              background: "linear-gradient(90deg, #4782ff 0%, #59adff 100%)",
+              background: "rgb(255,142,40)",
               borderRadius: "0 0 70px 70px",
               textAlign: "center",
             }}
@@ -1212,9 +1212,9 @@ const FiveD = ({ timerKey }) => {
               <Button
                 variant="contained"
                 sx={{
-                  background: "linear-gradient(90deg, #4782ff 0%, #59adff 100%)",
+                  background: "rgb(255,142,40)",
                   "&:hover": {
-                    background: "linear-gradient(90deg, #4782ff 0%, #59adff 100%)",
+                    background: "rgb(255,142,40)",
                   },
                   borderRadius: "50px",
                   fontSize: "11px",
@@ -1252,7 +1252,7 @@ const FiveD = ({ timerKey }) => {
                   cursor: "pointer",
                   background:
                     activeId === image.id
-                      ? "linear-gradient(to bottom, #4782ff, #4782ff)"
+                      ? "rgb(231, 136, 53)"
                       : "transparent",
                   borderRadius: "10px",
                   display: "flex",
@@ -2268,7 +2268,7 @@ const FiveD = ({ timerKey }) => {
                       sx={{
                         height: "40px", // Adjust this value to change the tab height
                         backgroundColor:
-                          activeTab === index ? "#4782ff" : "#ffffff",
+                          activeTab === index ? "rgb(255,142,40)" : "#ffffff",
                         color: activeTab === index ? "#ffffff" : "grey",
                         borderRadius: 1,
                         display: "flex",
@@ -2278,7 +2278,7 @@ const FiveD = ({ timerKey }) => {
                         transition: "all 0.3s",
                         "&:hover": {
                           backgroundColor:
-                            activeTab === index ? "#4782ff" : "#f5f5f5",
+                            activeTab === index ? "rgb(255,142,40)" : "#f5f5f5",
                         },
                       }}
                     >

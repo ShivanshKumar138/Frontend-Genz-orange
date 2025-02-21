@@ -28,7 +28,7 @@ const CustomTable = ({ data }) => {
           xs={2.4}
           key={column.id}
           sx={{
-            backgroundColor: "#4782ff",
+            backgroundColor: "rgb(255,142,40)",
             color: "white",
             padding: "8px",
             fontWeight: "bold",

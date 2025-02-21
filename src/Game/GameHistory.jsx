@@ -26,7 +26,7 @@ const GameHistory = ({ data }) => {
           key={column.id}
           sx={{
             width: column.width,
-            background: " #4782ff", // Changed to a golden yellow color
+            background: "rgb(255,142,40)", // Changed to a golden yellow color
             color: "white",
             padding: "2.5% 5.8%",
             borderTopLeftRadius: index === 0 ? "10px" : "0",
