@@ -454,7 +454,7 @@ const clearCache = () => {
 
         <div className="bottom-box-container">
           <SettingBottomBox
-            settingBottomImage={lockimg}
+            settingBottomImage="https://in.piccdn123.com/static/_template_/orange/img/my/editPswIcon.png"
             bottomBoxName="Login Password"
             bottomGoto="Edit"
             onClick={handleOpenResetPassword}
@@ -472,7 +472,7 @@ const clearCache = () => {
                         bottomGoto='Edit' /> */}
 
           <SettingBottomBox
-            settingBottomImage={update}
+            settingBottomImage="https://in.piccdn123.com/static/_template_/orange/img/my/versionUpdate.png"
             bottomBoxName="Updated Version"
             bottomGoto="1.0.1"
           />
