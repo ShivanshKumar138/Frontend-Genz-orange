@@ -570,13 +570,13 @@ const WithDrawMain = ({ children }) => {
                 zIndex: 1000,
                 backgroundColor: "#FE8123",
                 padding: "7px 4px",
-                color: "#1e2637",
+                color: "white",
               }}
             >
               <Grid item container alignItems="center" justifyContent="center">
                 <Grid item xs={3}>
                   <IconButton
-                    sx={{ color: "black", mr: 8 }}
+                    sx={{ color: "white", mr: 8 }}
                     onClick={handleWidthdrawback}
                   >
                     <ArrowBackIosNewIcon sx={{ fontSize: "20px" }} />
@@ -981,13 +981,13 @@ const WithDrawMain = ({ children }) => {
                         backgroundColor: "#ffffff",
                         "& .MuiOutlinedInput-root": {
                           "& fieldset": {
-                            borderColor: "#4782ff",
+                            borderColor: "rgb(255,142,41)",
                           },
                           "&:hover fieldset": {
-                            borderColor: "#4782ff",
+                            borderColor: "rgb(255,142,41)",
                           },
                           "&.Mui-focused fieldset": {
-                            borderColor: "#4782ff",
+                            borderColor: "rgb(255,142,41)",
                           },
                           "& input": {
                             color: "black",
@@ -1002,7 +1002,7 @@ const WithDrawMain = ({ children }) => {
                           <InputAdornment position="start">
                             <span
                               style={{
-                                color: "#4782ff",
+                                color: "rgb(255,142,41)",
                                 fontSize: "20px",
                                 fontWeight: "bold",
                               }}
@@ -1111,7 +1111,7 @@ const WithDrawMain = ({ children }) => {
                           },
                         },
                         "& .MuiInputBase-input::placeholder": {
-                          color: "#4782ff",
+                          color: "rgb(255,142,41)",
                           opacity: 1,
                         },
                       }}
@@ -1175,16 +1175,16 @@ const WithDrawMain = ({ children }) => {
                           },
                         },
                         "& .MuiInputBase-input::placeholder": {
-                          color: "#4782ff",
+                          color: "rgb(255,142,41)",
                           opacity: 1,
                         },
-                        color: "#4782ff",
+                        color: "rgb(255,142,41)",
                       }}
                       InputProps={{
                         startAdornment: (
                           <InputAdornment position="start">
                             <Typography
-                              sx={{ color: "#4782ff", fontWeight: "bold" }}
+                              sx={{ color: "rgb(255,142,41)", fontWeight: "bold" }}
                             >
                               ₹
                             </Typography>
@@ -1226,8 +1226,8 @@ const WithDrawMain = ({ children }) => {
                       variant="outlined"
                       size="small"
                       sx={{
-                        borderColor: "#4782ff",
-                        color: "#4782ff",
+                        borderColor: "rgb(255,142,41)",
+                        color: "rgb(255,142,41)",
                         minWidth: "60px",
                       }}
                       onClick={() => {
@@ -1246,10 +1246,10 @@ const WithDrawMain = ({ children }) => {
                       variant="contained"
                       sx={{
                         background:
-                          "linear-gradient(180deg, #3F88FF 0%, #3F88FF 30%,#3F88FF 100%)",
+                          "linear-gradient(180deg, #FF952A 0%, #FF952A 30%,#FF952A 100%)",
                         "&:hover": {
                           background:
-                            "linear-gradient(180deg, #3F88FF 0%, #3F88FF 30%, #3F88FF 100%)",
+                            "linear-gradient(180deg, #FF952A 0%, #FF952A 30%, #FF952A 100%)",
                         },
                       }}
                       onClick={handleWithdraw}
@@ -1283,7 +1283,7 @@ const WithDrawMain = ({ children }) => {
                         sx={{ minWidth: "unset", marginRight: "8px" }}
                       >
                         <RhombusIcon
-                          sx={{ fontSize: 10, color: "#4782ff", mr: 1 }}
+                          sx={{ fontSize: 10, color: "rgb(255,142,41)", mr: 1 }}
                         />
                       </ListItemIcon>
                       <ListItemText
@@ -1318,7 +1318,7 @@ const WithDrawMain = ({ children }) => {
                         sx={{ minWidth: "unset", marginRight: "8px" }}
                       >
                         <RhombusIcon
-                          sx={{ fontSize: 10, color: "#4782ff", mr: 1 }}
+                          sx={{ fontSize: 10, color: "rgb(255,142,41)", mr: 1 }}
                         />
                       </ListItemIcon>
                       <ListItemText
@@ -1357,7 +1357,7 @@ const WithDrawMain = ({ children }) => {
                         sx={{ minWidth: "unset", marginRight: "8px" }}
                       >
                         <RhombusIcon
-                          sx={{ fontSize: 10, color: "#4782ff", mr: 1 }}
+                          sx={{ fontSize: 10, color: "rgb(255,142,41)", mr: 1 }}
                         />
                       </ListItemIcon>
                       <ListItemText
@@ -1392,7 +1392,7 @@ const WithDrawMain = ({ children }) => {
                         sx={{ minWidth: "unset", marginRight: "8px" }}
                       >
                         <RhombusIcon
-                          sx={{ fontSize: 10, color: "#4782ff", mr: 1 }}
+                          sx={{ fontSize: 10, color: "rgb(255,142,41)", mr: 1 }}
                         />
                       </ListItemIcon>
                       <ListItemText
@@ -1431,7 +1431,7 @@ const WithDrawMain = ({ children }) => {
                         sx={{ minWidth: "unset", marginRight: "8px" }}
                       >
                         <RhombusIcon
-                          sx={{ fontSize: 10, color: "#4782ff", mr: 1 }}
+                          sx={{ fontSize: 10, color: "rgb(255,142,41)", mr: 1 }}
                         />
                       </ListItemIcon>
                       <ListItemText
@@ -1454,7 +1454,7 @@ const WithDrawMain = ({ children }) => {
                         sx={{ minWidth: "unset", marginRight: "8px" }}
                       >
                         <RhombusIcon
-                          sx={{ fontSize: 10, color: "#4782ff", mr: 1 }}
+                          sx={{ fontSize: 10, color: "rgb(255,142,41)", mr: 1 }}
                         />
                       </ListItemIcon>
                       <ListItemText

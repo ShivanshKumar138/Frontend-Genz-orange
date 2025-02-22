@@ -39,7 +39,7 @@ const SuperJackpot = () => {
             container
             alignItems="center"
             justifyContent="center"
-            sx={{ bgcolor: "#4782ff", py: 1 }} // Background color for the header
+            sx={{ bgcolor: "rgb(255,142,41)", py: 1 }} // Background color for the header
           >
             <Grid item xs={2}>
               <IconButton
@@ -112,7 +112,7 @@ const SuperJackpot = () => {
             sx={{
               mb: 2,
               maxWidth: 380,
-              bgcolor: "#4782ff",
+              bgcolor: "rgb(255,142,41)",
               color: "#ffffff",
               fontWeight: "bold",
               py: 1,
@@ -195,14 +195,14 @@ const SuperJackpot = () => {
             variant="contained"
             fullWidth
             sx={{
-              bgcolor: " #4782ff",
+              bgcolor: " rgb(255,142,41)",
               color: "white",
               fontWeight: "bold",
               maxWidth: 350,
               borderRadius: "24px",
               alignItem: "center",
               py: 1,
-              "&:hover": { bgcolor: " #4782ff" },
+              "&:hover": { bgcolor: " rgb(255,142,41)" },
             }}
           >
             {" "}

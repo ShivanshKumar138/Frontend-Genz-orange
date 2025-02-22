@@ -426,7 +426,7 @@ const SubordinateDataMain = () => {
               <Box
                 sx={{
                   padding: "25px",
-                  background: "linear-gradient(90deg, #4782ff 0%, #59adff 100%)",
+                  background: "linear-gradient(90deg, #FF952A 0%, #FF952A 100%)",
                   width: "78%",
                   borderRadius: "16px",
                   boxShadow: "0 8px 32px rgba(0, 0, 0, 0.2)",
@@ -514,7 +514,7 @@ const SubordinateDataMain = () => {
               sx={{
                 width: "90%",
                 margin: "15px auto",
-                background: "linear-gradient(90deg, #4782ff 0%, #59adff 100%)",
+                background: "linear-gradient(90deg, rgb(255,142,41) 0%, rgb(255,142,41) 100%)",
                 borderRadius: "25px",
               }}
             >
@@ -525,7 +525,7 @@ const SubordinateDataMain = () => {
                 indicatorColor="primary"
                 variant="fullWidth"
                 sx={{
-                  background: "linear-gradient(90deg, #4782ff 0%, #59adff 100%)",
+                  background: "linear-gradient(90deg, rgb(255,142,41) 0%, rgb(255,142,41) 100%)",
                   borderRadius: "5px",
                   color: "white",
                   "& .MuiTabs-indicator": {

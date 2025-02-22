@@ -156,7 +156,7 @@ const WithdrawHistoryMain = () => {
           <Grid item container alignItems="center" justifyContent="center">
             <Grid item xs={2}>
               <IconButton
-                sx={{ color: "black", ml: -5 }}
+                sx={{ color: "white", ml: -5 }}
                 onClick={handleRedirect}
               >
                 <ArrowBackIosNewIcon />
@@ -166,7 +166,7 @@ const WithdrawHistoryMain = () => {
               <Typography
                 variant="h6"
                 sx={{
-                  color: "black",
+                  color: "white",
                   flexGrow: 1,
                   textAlign: "center",
                   mr: 8,
@@ -528,7 +528,7 @@ const WithdrawHistoryMain = () => {
                 Cancel
               </Typography>
               <Typography
-                sx={{ color: "#4782ff", fontWeight: "bold", cursor: "pointer" }}
+                sx={{ color: "rgb(255,142,41)", fontWeight: "bold", cursor: "pointer" }}
               >
                 Confirm
               </Typography>

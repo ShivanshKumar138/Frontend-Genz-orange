@@ -278,9 +278,9 @@ const Register = () => {
             position: "sticky",
             top: 0,
             zIndex: 1000,
+            background: "linear-gradient(90deg, rgb(255,142,41) 0%, rgb(255,142,41) 100%)",
             background: "rgb(255,142,40)",
             padding: "8px 16px",
-
             color: "#666",
           }}
         >
@@ -348,6 +348,7 @@ const Register = () => {
           justifyContent="flex-start"
           alignItems="flex-start"
           sx={{
+            background: "linear-gradient(90deg, rgb(255,142,41) 0%, rgb(255,142,41) 100%)",
             background: "rgb(255,142,40)",
             padding: "16px",
             color: "white",
@@ -358,7 +359,7 @@ const Register = () => {
           direction="column"
         >
           <Typography
-            variant="h1"
+            variant="h5"
             sx={{
               position: "absolute",
               right: "-20px",
@@ -372,7 +373,7 @@ const Register = () => {
               userSelect: "none",
             }}
           >
-            G
+            747
           </Typography>
 
           <Typography
@@ -383,7 +384,7 @@ const Register = () => {
               fontFamily: "helvetica",
             }}
           >
-            Mahakal Club
+            747 Lottery 
           </Typography>
 
           <Typography
@@ -404,7 +405,7 @@ const Register = () => {
               border: "none",
               padding: 0,
               margin: 0,
-              color: "#4782ff",
+              color: "rgb(255,142,41)",
               cursor: "pointer",
               textTransform: "none",
               textDecoration: "underline",
@@ -449,7 +450,7 @@ const Register = () => {
                   onChange={handleTabChange}
                   TabIndicatorProps={{
                     style: {
-                      backgroundColor: tabValue === 0 ? "#4782ff" : "grey",
+                      backgroundColor: tabValue === 0 ? "rgb(255,142,41)" : "grey",
                     },
                   }}
                   sx={{ display: "flex", justifyContent: "center" }}
@@ -458,12 +459,12 @@ const Register = () => {
                     icon={
                       <SendToMobileIcon
                         style={{
-                          color: tabValue === 0 ? "#4782ff" : "grey",
+                          color: tabValue === 0 ? "rgb(255,142,41)" : "grey",
                         }}
                       />
                     }
                     label="Register With Mobile"
-                    style={{ color: tabValue === 0 ? "#4782ff" : "grey" }}
+                    style={{ color: tabValue === 0 ? "rgb(255,142,41)" : "grey" }}
                   /> */}
               {/* Uncomment and update this Tab if needed
         <Tab
@@ -477,6 +478,7 @@ const Register = () => {
 
 <TabPanel value={tabValue} index={0}>
   <Box display="flex" alignItems="center" mt={2}>
+    <SendToMobileIcon sx={{ color: "rgb(255,142,41)" }} />
     {/* <SendToMobileIcon sx={{ color: "#4782ff" }} />
      */}
      <img src="https://in.piccdn123.com/static/_template_/orange/img/sign/mobile.png" style={{width:"25px"}}/>
@@ -589,10 +591,12 @@ const Register = () => {
     alignItems: "flex-start",
     fontSize: "0.1rem",
   }}>
+    <FormLabel sx={{ color: "rgb(255,142,41)", fontSize: "12px" }}>
     <FormLabel sx={{ color: "rgb(255,142,40)", fontSize: "12px" }}>
       The registered phone number cannot start with 0!
     </FormLabel>
     <br />
+    <FormLabel sx={{ color: "rgb(255,142,41)", fontSize: "12px" }}>
     <FormLabel sx={{ color: "rgb(255,142,40)", fontSize: "12px" }}>
       Example: 956521888
     </FormLabel>
@@ -616,13 +620,13 @@ const Register = () => {
                     borderRadius: "10px",
                     "& .MuiOutlinedInput-root": {
                       "& fieldset": {
-                        borderColor: "#4782ff !important", // Initial border color
+                        borderColor: "rgb(255,142,41) !important", // Initial border color
                       },
                       "&:hover fieldset": {
-                        borderColor: "#4782ff !important", // Border color on hover
+                        borderColor: "rgb(255,142,41) !important", // Border color on hover
                       },
                       "&.Mui-focused fieldset": {
-                        borderColor: "#4782ff !important", // Border color when focused
+                        borderColor: "rgb(255,142,41) !important", // Border color when focused
                       },
                     },
                     "& .MuiInputBase-input": {
@@ -674,10 +678,10 @@ const Register = () => {
                         borderColor: "rgb(255,255,255) !important",
                       },
                       "&:hover fieldset": {
-                        borderColor: "rgb(71,129,255) !important",
+                        borderColor: "rgb(255,142,41) !important",
                       },
                       "&.Mui-focused fieldset": {
-                        borderColor: "rgb(71,129,255) !important",
+                        borderColor: "rgb(255,142,41) !important",
                       },
                     },
                     "& .MuiInputLabel-root": {
@@ -706,7 +710,7 @@ const Register = () => {
                 />
 
                 <Box display="flex" alignItems="center" mt={2}>
-                  <LockIcon sx={{ color: "rgb(42,50,112)" }} />
+                  <LockIcon sx={{ color: "rgb(255,142,41)" }} />
                   <FormLabel sx={{ color: "#666" }}>Enter OTP</FormLabel>
                 </Box>
                 <TextField
@@ -721,13 +725,13 @@ const Register = () => {
                     borderRadius: "10px",
                     "& .MuiOutlinedInput-root": {
                       "& fieldset": {
-                        borderColor: "#4782ff !important", // Initial border color with increased specificity
+                        borderColor: "rgb(255,142,41) !important", // Initial border color with increased specificity
                       },
                       "&:hover fieldset": {
-                        borderColor: "#4782ff !important", // Border color on hover with increased specificity
+                        borderColor: "rgb(255,142,41) !important", // Border color on hover with increased specificity
                       },
                       "&.Mui-focused fieldset": {
-                        borderColor: "#4782ff !important", // Border color when focused with increased specificity
+                        borderColor: "rgb(255,142,41) !important", // Border color when focused with increased specificity
                       },
                     },
                     "& .MuiInputBase-input": {
@@ -763,6 +767,7 @@ const Register = () => {
               </TabPanel>
 
               <Box display="flex" alignItems="center">
+                <LockIcon sx={{ color: "rgb(255,142,41)" }} />
                 {/* <LockIcon sx={{ color: "#4782ff" }} />
                  */}
                  <img src="https://in.piccdn123.com/static/_template_/orange/img/sign/pwd.png" style={{width:"25px"}}/>
@@ -847,22 +852,27 @@ const Register = () => {
                   fontSize: "0.1rem",
                 }}
               >
+                {/* <SendToMobileIcon sx={{ color: "rgb(255,142,41)" }} /> */}
+                <FormLabel sx={{ color: "rgb(255,142,41)", fontSize: "12px" }}>
                 {/* <SendToMobileIcon sx={{ color: "#4782ff" }} /> */}
                 <FormLabel sx={{ color: "rgb(255,142,40)", fontSize: "12px" }}>
                   Password must contain uppercase and lowercase{" "}
                 </FormLabel>
                 <br />
+                <FormLabel sx={{ color: "rgb(255,142,41)", fontSize: "12px" }}>
                 <FormLabel sx={{ color: "rgb(255,142,40)", fontSize: "12px" }}>
                   {" "}
                   letters A-Z and numbers 0-9 and have more than{" "}
                 </FormLabel>
                 <br />
+                <FormLabel sx={{ color: "rgb(255,142,41)", fontSize: "12px" }}>
                 <FormLabel sx={{ color: "rgb(255,142,40)", fontSize: "12px" }}>
                   or equal to 8 digits{" "}
                 </FormLabel>
               </Box>
 
               <Box display="flex" alignItems="center">
+                <LockIcon sx={{ color: "rgb(255,142,41)" }} />
                 {/* <LockIcon sx={{ color: "#4782ff" }} /> */}
                 <img src="https://in.piccdn123.com/static/_template_/orange/img/sign/pwd.png" style={{width:"25px"}}/>
                 <FormLabel
@@ -940,7 +950,7 @@ const Register = () => {
               />
               {/* 
               <Box display="flex" alignItems="center" mt={2}>
-                <LockIcon sx={{ color: "#4782ff" }} />
+                <LockIcon sx={{ color: "rgb(255,142,41)" }} />
                 <FormLabel sx={{ color: "white" }}>Confirm Password</FormLabel>
               </Box>
               <TextField
@@ -956,13 +966,13 @@ const Register = () => {
                   borderRadius: "10px",
                   "& .MuiOutlinedInput-root": {
                     "& fieldset": {
-                      borderColor: "#4782ff", // Initial border color
+                      borderColor: "rgb(255,142,41)", // Initial border color
                     },
                     "&:hover fieldset": {
-                      borderColor: "#4782ff", // Border color on hover
+                      borderColor: "rgb(255,142,41)", // Border color on hover
                     },
                     "&.Mui-focused fieldset": {
-                      borderColor: "#4782ff", // Border color when focused
+                      borderColor: "rgb(255,142,41)", // Border color when focused
                     },
                   },
                   "& .MuiInputBase-input": {
@@ -990,6 +1000,7 @@ const Register = () => {
               /> */}
 
               <Box display="flex" alignItems="center" mt={2}>
+                <MoveToInboxIcon sx={{ color: "rgb(255,142,41)" }} />
                 {/* <MoveToInboxIcon sx={{ color: "#4782ff" }} /> */}
                 <img src="https://in.piccdn123.com/static/_template_/orange/img/sign/foget.png" style={{width:"25px"}}/>
                 <FormLabel

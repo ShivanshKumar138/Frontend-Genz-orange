@@ -15,26 +15,26 @@ import {
 import { useNavigate } from "react-router-dom";
 
 const cardData = [
-  {
-    image: "../assets/banners/a2.png",
-    text: "First Deposit Bonus",
-    url: "/activity/FirstRecharge",
-  },
+  // {
+  //   image: "../assets/banners/a2.png",
+  //   text: "First Deposit Bonus",
+  //   url: "/activity/FirstRecharge",
+  // },
   // {
   //   image: "../assets/luckySpinBannerImage.png",
   //   text: "Lucky Spin Bonus",
   //   url: "/activity/lucky-spin",
   // },
-  {
-    image: "../assets/banners/a1.png",
-    text: "Real-Time Rebate",
-    url: "/activity/ActivityDetail",
-  },
-  {
-    image: "../assets/banners/a5.png",
-    text: "Youtube Creative Video Event",
-    url: "/activity/YouTubeCreative",
-  },
+  // {
+  //   image: "../assets/banners/a1.png",
+  //   text: "Real-Time Rebate",
+  //   url: "/activity/ActivityDetail",
+  // },
+  // {
+  //   image: "../assets/banners/a5.png",
+  //   text: "Youtube Creative Video Event",
+  //   url: "/activity/YouTubeCreative",
+  // },
 
 ];
 

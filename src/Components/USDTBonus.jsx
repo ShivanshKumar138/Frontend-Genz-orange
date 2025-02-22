@@ -30,7 +30,7 @@ function USDTBonus({ children }) {
               position: "sticky",
               top: 0,
               zIndex: 1000,
-              background: "linear-gradient(90deg, #4782ff 0%, #59adff 100%)",
+              background: "linear-gradient(90deg, rgb(255,142,41) 0%, #FF952A 100%)",
               padding: "10px 16px",
               color: "white",
             }}

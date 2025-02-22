@@ -50,7 +50,7 @@ const Rule = () => {
         >
          <Box
   sx={{
-    bgcolor: "#4782ff", // Set the background color to match the theme
+    bgcolor: "rgb(255,142,41)", // Set the background color to match the theme
     p: 1,
     display: "flex",
     alignItems: "center",
@@ -145,7 +145,7 @@ const Rule = () => {
             >
               <Table>
                 <TableHead>
-                  <TableRow sx={{ bgcolor: "#4782ff" }}>
+                  <TableRow sx={{ bgcolor: "rgb(255,142,41)" }}>
                     <TableCell sx={{ color: "#ffffff" }}>
                       Winning rate
                     </TableCell>
@@ -185,12 +185,12 @@ const Rule = () => {
             startIcon={<HeadsetMicIcon />}
             sx={{
               width:"95%",
-              bgcolor: "#4782ff",
+              bgcolor: "rgb(255,142,41)",
               p: 5,
               color: "white",
               fontWeight: "bold",
               "&:hover": {
-                bgcolor: "#4782ff",
+                bgcolor: "rgb(255,142,41)",
               },
               py: 1,
               borderRadius: 10,

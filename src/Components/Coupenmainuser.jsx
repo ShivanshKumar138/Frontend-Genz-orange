@@ -116,7 +116,7 @@ const Coupenmainuser = ({ children }) => {
               }}>
                 <Grid item xs={2}>
                   <IconButton
-                    sx={{ color: "#1e2637", ml: -5 }}
+                    sx={{ color: "white", ml: -5 }}
                     onClick={handleRedirect}
                   >
                     <ArrowBackIosNewIcon />
@@ -126,7 +126,7 @@ const Coupenmainuser = ({ children }) => {
                   <Typography
                     variant="h6"
                     sx={{
-                      color: "#1e2637",
+                      color: "white",
                       flexGrow: 1,
                       textAlign: "center",
                       mr: 8,

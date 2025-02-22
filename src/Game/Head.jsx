@@ -370,9 +370,9 @@ const Head = ({ timerKey }) => {
   };
 
   const textArray = [
-    "We are excited to welcome you to Mahakal Club, where you can enjoy a wide range of games. But that's not all - there are also plenty of bonuses waiting for you to claim! Join us now and start play your game with Mahakal Club. Get ready for non-stop fun and rewards. Welcome aboard!  Stay tuned for more updates and promotions.",
-    "24/7 Live support on Mahakal Club club ",
-    "Mahakal Club club welcomes you here !!",
+    "We are excited to welcome you to 747 Lottery , where you can enjoy a wide range of games. But that's not all - there are also plenty of bonuses waiting for you to claim! Join us now and start play your game with 747 Lottery . Get ready for non-stop fun and rewards. Welcome aboard!  Stay tuned for more updates and promotions.",
+    "24/7 Live support on 747 Lottery  club ",
+    "747 Lottery  club welcomes you here !!",
   ];
 
   React.useEffect(() => {

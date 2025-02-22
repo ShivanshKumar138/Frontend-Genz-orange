@@ -35,27 +35,27 @@ const Rebate = () => {
 
   const tabsData = [
     {
-      icon: "/assets/all-da76a7fc.png",
+      icon: "/assets/banners/re1.png",
       label: "All",
       title: "All-Total betting rebate",
     },
     {
-      icon: "/assets/gamecategory_20240611172928bnqo.png",
+      icon: "/assets/banners/re2.png",
       label: "Lottery",
       title: "Lottery-Total betting rebate",
     },
     {
-      icon: "/assets/gamecategory_20240611172909nn2o.png",
+      icon: "/assets/banners/re3.png",
       label: "Casino",
       title: "Casino-Total betting rebate",
     },
     {
-      icon: "/assets/gamecategory_20240611172848skb1.png",
+      icon: "/assets/banners/re4.png",
       label: "Rummy",
       title: "Rummy-Total betting rebate",
     },
     {
-      icon: "/assets/gamecategory_20240611172507k9pn.png",
+      icon: "/assets/banners/re5.png",
       label: "Slots",
       title: "Slots-Total betting rebate",
     },
@@ -101,7 +101,7 @@ const Rebate = () => {
       >
         <AppBar
           position="static"
-          sx={{ bgcolor: "#4782ff", color: "white" }}
+          sx={{ bgcolor: "rgb(255,142,41)", color: "white" }}
           elevation={0}
         >
           <Toolbar>
@@ -148,13 +148,13 @@ const Rebate = () => {
               label={tab.label}
               sx={{
                 fontSize: "0.7rem",
-                color: tabValue === index ? "#ffffff" : "#888",
-                bgcolor: tabValue === index ? "#4782ff" : "transparent",
+                color: tabValue === index ? "black" : "#888",
+                bgcolor: tabValue === index ? "#F6F6F6" : "transparent",
                 flex: 1,
                 minWidth: 0,
-                "&.Mui-selected": { color: "#ffffff" },
+                "&.Mui-selected": { color: "black" },
                 "&:hover": {
-                  bgcolor: tabValue === index ? "#4782ff" : "#f0f0f0",
+                  bgcolor: tabValue === index ? "rgb(255,142,41)" : "#f0f0f0",
                   color: tabValue === index ? "#ffffff" : "#666",
                 },
               }}
@@ -174,7 +174,7 @@ const Rebate = () => {
           >
             <Typography
               variant="h6"
-              sx={{ fontWeight: "bold", mb: 2, color: "#4782ff", textAlign: "left" }}
+              sx={{ fontWeight: "bold", mb: 2, color: "rgb(255,142,41)", textAlign: "left" }}
             >
               {tabsData[tabValue].title}
             </Typography>
@@ -183,7 +183,7 @@ const Rebate = () => {
                 <Box
                   component="span"
                   sx={{
-                    border: "1px solid #4782ff",
+                    border: "1px solid rgb(255,142,41)",
                     borderRadius: "5px",
                     px: 1,
                     py: 0.5,
@@ -192,10 +192,10 @@ const Rebate = () => {
                     alignItems: "center",
                   }}
                 >
-                  <VerifiedUserIcon sx={{ color: "#4782ff", mr: 0.5 }} />
+                  <VerifiedUserIcon sx={{ color: "rgb(255,142,41)", mr: 0.5 }} />
                   <Typography
                     variant="caption"
-                    sx={{ color: "#4782ff", fontWeight: "bold" }}
+                    sx={{ color: "rgb(255,142,41)", fontWeight: "bold" }}
                   >
                     Real-time count
                   </Typography>
@@ -203,7 +203,7 @@ const Rebate = () => {
               </Box>
               <Typography
                 variant="h5"
-                sx={{ fontWeight: "bold", color: "#4782ff", mb: 2, textAlign: "left"
+                sx={{ fontWeight: "bold", color: "rgb(255,142,41)", mb: 2, textAlign: "left"
                  }}
               >
                 <AccountBalanceWalletOutlinedIcon
@@ -257,7 +257,7 @@ const Rebate = () => {
                 variant="contained"
                 fullWidth
                 sx={{
-                  bgcolor: "#4782ff",
+                  bgcolor: "rgb(255,142,41)",
                   color: "#fff",
                   borderRadius: "25px",
                   textTransform: "none",
@@ -285,7 +285,7 @@ const Rebate = () => {
             <Box
               component="span"
               sx={{
-                bgcolor: "#4782ff",
+                bgcolor: "rgb(255,142,41)",
                 mr: 1,
                 borderRadius: "2px",
                 width: "4px",
@@ -317,7 +317,7 @@ const Rebate = () => {
                       </Typography>
                       <Typography
                         variant="h6"
-                        sx={{ fontWeight: "bold", color: "#4782ff" }}
+                        sx={{ fontWeight: "bold", color: "rgb(255,142,41)" }}
                       >
                         {record.rebateAmount.toFixed(2)}
                       </Typography>
@@ -328,7 +328,7 @@ const Rebate = () => {
                       </Typography>
                       <Typography
                         variant="h6"
-                        sx={{ fontWeight: "bold", color: "#4782ff" }}
+                        sx={{ fontWeight: "bold", color: "rgb(255,142,41)" }}
                       >
                         {record.walletAmountAfterRebate.toFixed(2)}
                       </Typography>
