@@ -53,25 +53,25 @@ const images = [
   {
     id: 1,
     src: "../../games/assets/time-5d4e96a3.png",
-    altSrc: "/assets/blueclock.png",
+    altSrc: "https://in.piccdn123.com/static/_template_/orange/img/game/time_cur.png",
     subtitle: "1Min",
   },
   {
     id: 2,
     src: "../../games/assets/time-5d4e96a3.png",
-    altSrc: "/assets/blueclock.png",
+    altSrc: "https://in.piccdn123.com/static/_template_/orange/img/game/time_cur.png",
     subtitle: "3Min",
   },
   {
     id: 3,
     src: "../../games/assets/time-5d4e96a3.png",
-    altSrc: "/assets/blueclock.png",
+    altSrc: "https://in.piccdn123.com/static/_template_/orange/img/game/time_cur.png",
     subtitle: "5Min",
   },
   {
     id: 4,
     src: "../../games/assets/time-5d4e96a3.png",
-    altSrc: "/assets/blueclock.png",
+    altSrc: "https://in.piccdn123.com/static/_template_/orange/img/game/time_cur.png",
     subtitle: "10Min",
   },
 ];
@@ -1252,7 +1252,7 @@ const FiveD = ({ timerKey }) => {
                   cursor: "pointer",
                   background:
                     activeId === image.id
-                      ? "rgb(231, 136, 53)"
+                      ? "linear-gradient(180deg, rgba(255, 150, 44, 0.46) 0%, #FFF 90.5%)"
                       : "transparent",
                   borderRadius: "10px",
                   display: "flex",
@@ -1269,7 +1269,7 @@ const FiveD = ({ timerKey }) => {
                 <div
                   style={{
                     textAlign: "center",
-                    color: activeId === image.id ? "#ffffff" : "black",
+                    color: activeId === image.id ? "black" : "grey",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
@@ -1417,7 +1417,7 @@ const FiveD = ({ timerKey }) => {
               maxWidth: "90%",
               boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
               p: 1,
-              backgroundColor: "#ffffff",
+              backgroundColor: "white",
               borderRadius: "10px",
             }}
           >
@@ -1425,7 +1425,7 @@ const FiveD = ({ timerKey }) => {
               <Grid item xs={2}>
                 <Typography
                   variant="body1"
-                  color="#9DA5A1"
+                  color="black"
                   sx={{ fontSize: "0.8rem" }}
                 >
                   Period
@@ -1435,14 +1435,14 @@ const FiveD = ({ timerKey }) => {
                 <Button
                   variant="outlined"
                   sx={{
-                    border: "1px solid #4782ff",
+                    border: "orange",
                     borderRadius: "15px",
                     padding: "1.5px 17px",
                     fontSize: "0.6rem",
                     textTransform: "initial",
                     display: "inline-flex", // Use inline-flex to align items in a line
                     alignItems: "center", // Center items vertically
-                    color: "#4782ff",
+                    color: "black",
                   }}
                   startIcon={<NoteIcon />}
                   onClick={handleOpenPopup}
@@ -1452,7 +1452,7 @@ const FiveD = ({ timerKey }) => {
                 <Htp isOpen={isPopupOpen} onClose={handleClosePopup} />
               </Grid>
               <Grid item xs={5} sx={{ paddingLeft: "10px" }}>
-                <Typography variant="body5" color="#9DA5A1">
+                <Typography variant="body5" color="black">
                   Time Remaining
                 </Typography>
               </Grid>
@@ -1483,7 +1483,7 @@ const FiveD = ({ timerKey }) => {
                       height: "22px",
                       marginTop: "12px",
                       backgroundColor: "#f2f2f1",
-                      color: "#4782ff",
+                      color: "black",
                       textAlign: "center",
                       fontWeight: "bold",
                       lineHeight: "25px",
@@ -1499,7 +1499,7 @@ const FiveD = ({ timerKey }) => {
                       height: "22px",
                       marginTop: "8px",
                       backgroundColor: "#f2f2f1",
-                      color: "#4782ff",
+                      color: "black",
                       fontWeight: "bold",
                       textAlign: "center",
                       lineHeight: "25px",
@@ -1514,7 +1514,7 @@ const FiveD = ({ timerKey }) => {
                       width: "16px",
                       height: "22px",
                       backgroundColor: "#f2f2f1",
-                      color: "#4782ff",
+                      color: "black",
                       marginTop: "8px",
                       fontWeight: "bold",
                       textAlign: "center",
@@ -1530,7 +1530,7 @@ const FiveD = ({ timerKey }) => {
                       width: "16px",
                       height: "22px",
                       backgroundColor: "#f2f2f1",
-                      color: "#4782ff",
+                      color: "black",
                       marginTop: "10px",
                       fontWeight: "bold",
                       textAlign: "center",
@@ -1546,7 +1546,7 @@ const FiveD = ({ timerKey }) => {
                       width: "16px",
                       height: "22px",
                       backgroundColor: "#f2f2f1",
-                      color: "#4782ff",
+                      color: "black",
                       fontWeight: "bold",
                       marginTop: "8px",
                       textAlign: "center",
