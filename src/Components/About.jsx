@@ -111,11 +111,11 @@ import {
                 <DescriptionIcon sx={{ color: "#4782ff", fontSize: 24 }} />
               </ListItemIcon> */}
 
-<img src="https://in.piccdn123.com/static/_template_/orange/img/my/riskProtocal.png" style={{
+            <img src="https://in.piccdn123.com/static/_template_/orange/img/my/riskProtocal.png" style={{
                 width:"25px",
                 marginRight:"30px"
               }}/>
-              <ListItemText primary="Risk Disclosure Agreement" />
+              <ListItemText primary="Risk Acknowledgment and Disclosure Agreement" />
             </ListItem>
             <Divider sx={{ mx: 2 }} />
           </List>
