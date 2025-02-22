@@ -63,25 +63,25 @@ const images = [
   {
     id: 1,
     src: "../../games/assets/time-5d4e96a3.png",
-    altSrc: "/assets/blueclock.png",
+    altSrc: "https://in.piccdn123.com/static/_template_/orange/img/game/time_cur.png",
     subtitle: "1Min",
   },
   {
     id: 2,
     src: "../../games/assets/time-5d4e96a3.png",
-    altSrc: "/assets/blueclock.png",
+    altSrc: "https://in.piccdn123.com/static/_template_/orange/img/game/time_cur.png",
     subtitle: "3Min",
   },
   {
     id: 3,
     src: "../../games/assets/time-5d4e96a3.png",
-    altSrc: "/assets/blueclock.png",
+    altSrc: "https://in.piccdn123.com/static/_template_/orange/img/game/time_cur.png",
     subtitle: "5Min",
   },
   {
     id: 4,
     src: "../../games/assets/time-5d4e96a3.png",
-    altSrc: "/assets/blueclock.png",
+    altSrc: "https://in.piccdn123.com/static/_template_/orange/img/game/time_cur.png",
     subtitle: "10Min",
   },
 ];
@@ -1922,7 +1922,7 @@ const LotteryAppk = ({ timerKey }) => {
                   cursor: "pointer",
                   background:
                     activeId === image.id
-                      ? "rgb(254,134,37)"
+                      ? "linear-gradient(180deg, rgba(255, 150, 44, 0.46) 0%, #FFF 90.5%)"
                       : "transparent",
                   borderRadius: "10px",
                   display: "flex",
@@ -1939,7 +1939,7 @@ const LotteryAppk = ({ timerKey }) => {
                 <div
                   style={{
                     textAlign: "center",
-                    color: activeId === image.id ? "#ffffff" : "black",
+                    color: activeId === image.id ? "black" : "grey",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",

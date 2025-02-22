@@ -14,7 +14,7 @@ import MailIcon from "@mui/icons-material/Mail";
 import messageIcon from "../../public/headerIcon/newMessageIcon.png";
 // import downloadIcon from "../../public/headerIcon/download.svg";
 
-import {
+import {  
   Paper,
   Typography,
   Button,
