@@ -1,6 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import IconButton from "@mui/material/IconButton";
 import Mobile from "../Components/Mobile";
+import CloseIcon from "@mui/icons-material/Close";
+import RemoveIcon from "@mui/icons-material/IndeterminateCheckBox";
+import AddIcon from "@mui/icons-material/AddBox";
+import { FormControlLabel, Radio } from "@mui/material";
+import RadioButtonUncheckedIcon from "@mui/icons-material/RadioButtonUnchecked";
 import {
   Typography,
   Grid,
@@ -56,6 +61,7 @@ import axios from "axios";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import { wssdomain } from "../Components/config";
+import { CheckCircleIcon } from "lucide-react";
 const countdownSound = new Audio("/assets/sound.mp3");
 countdownSound.loop = true;
 
@@ -454,6 +460,7 @@ const RowVisualization = ({ data }) => {
 // };
 
 const LotteryAppk = ({ timerKey }) => {
+    const [agree, setAgree] = useState(false);
   const [activeId, setActiveId] = useState(images[0].id);
   const [selectedTimer, setSelectedTimer] = useState("1Min");
   const [selectedItem, setselectedItem] = useState(0);
@@ -595,20 +602,20 @@ const LotteryAppk = ({ timerKey }) => {
   const [index, setIndex] = React.useState(0);
   const [inProp, setInProp] = React.useState(false);
 
-  React.useEffect(() => {
-    const timer = setInterval(() => {
-      setInProp(false);
+  // React.useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     setInProp(false);
 
-      setTimeout(() => {
-        setIndex((oldIndex) => {
-          return (oldIndex + 1) % textArray.length;
-        });
-        setInProp(true);
-      }, 500); // This should be equal to the exit duration below
-    }, 3000); // Duration between changing texts
+  //   //   setTimeout(() => {
+  //   //     setIndex((oldIndex) => {
+  //   //       return (oldIndex + 1) % textArray.length;
+  //   //     });
+  //   //     setInProp(true);
+  //   //   }, 500); // This should be equal to the exit duration below
+  //   // }, 3000); // Duration between changing texts
 
-    return () => clearInterval(timer);
-  }, []);
+  //   // return () => clearInterval(timer);
+  // }, []);
 
   //   table
   const [value, setValue] = useState(0);
@@ -1055,15 +1062,15 @@ const LotteryAppk = ({ timerKey }) => {
           `Displaying popup for bet: ${currentBet.periodId}, Status: ${currentBet.status}`
         );
 
-        const timer = setTimeout(() => {
-          setOpen(false);
-          console.log("Closing popup and moving to next");
-          setTimeout(() => {
-            setCurrentBetIndex((prevIndex) => prevIndex + 1);
-          }, 1000);
-        }, 2500);
+        // const timer = setTimeout(() => {
+        //   setOpen(false);
+        //   console.log("Closing popup and moving to next");
+        //   setTimeout(() => {
+        //     setCurrentBetIndex((prevIndex) => prevIndex + 1);
+        //   }, 1000);
+        // }, 2500);
 
-        return () => clearTimeout(timer);
+        // return () => clearTimeout(timer);
       } else {
         // console.log(`Skipping bet with status: ${currentBet.status}`);
         setCurrentBetIndex((prevIndex) => prevIndex + 1);
@@ -2280,7 +2287,7 @@ const LotteryAppk = ({ timerKey }) => {
             </Box>
           </Box>
 
-          <Drawer
+          {/* <Drawer
             anchor="bottom"
             open={drawerOpen}
             onClose={handleCloseDrawer}
@@ -2607,6 +2614,216 @@ const LotteryAppk = ({ timerKey }) => {
                       style={{ background: "linear-gradient(90deg, #4782ff 0%, #59adff 100%)", color: "#ffffff" }}
                       variant="contained"
                     >{`Total Bet: ${betAmount * multiplier}`}</Button>
+                  </Grid>
+                </Grid>
+              </Grid>
+            </Grid>
+          </Drawer> */}
+
+<Drawer
+            anchor="bottom"
+            open={drawerOpen}
+            onClose={handleCloseDrawer}
+            sx={{
+              "& .MuiDrawer-paper": {
+                width: "100%",
+                height: "auto",
+                margin: "0 auto",
+                maxWidth: isSmallScreen ? "600px" : "396px",
+                backgroundColor: "white",
+                color: "black",
+                borderTopLeftRadius: "16px",
+                borderTopRightRadius: "16px",
+              },
+            }}
+          >
+            <Grid
+              container
+              alignItems="center"
+              style={{
+                position: "relative",
+                color: "black",
+                backgroundColor: "#ffffff",
+              }}
+            >
+              <Grid
+                item
+                xs={12}
+                align="center"
+                style={{
+                  position: "relative",
+                  marginBottom: "-5px",
+                  height: "90px",
+                  color: "white",
+                  backgroundColor: "#ffffff",
+                }}
+              >
+                <div
+                  style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "70%",
+                    background: "orange",
+                    clipPath: "polygon(50.7% 100.3%, 100.1% 61%, 100.1% 0%, 0% 0%, 0.1% 71.3%)",
+                  }}
+                >
+                   <Typography variant="h6">{`K3 ${selectedTimer}`}</Typography>
+                   <Typography variant="body1">{`${selectedItem} is selected`}</Typography>
+                </div>
+                
+              </Grid>
+              <Grid container padding={1}>
+  {/* Balance Section */}
+  <Grid item xs={6}>
+    <Typography
+      variant="h6"
+      sx={{
+        color: "#666",
+        fontSize: "1rem",
+        marginTop: "5px",
+      }}
+    >
+      Balance
+    </Typography>
+  </Grid>
+
+  {/* Bet Amount Buttons */}
+  <Grid item xs={6} sx={{ display: "flex", justifyContent: "flex-end" }}>
+    <Box sx={{ display: "flex", gap: "5px" }}>
+      {[1, 10, 100, 1000].map((amount) => (
+        <Button
+          key={amount}
+          sx={{
+            minWidth: "40px",
+            height: "25px",
+            padding: "2px 4px",
+            fontSize: "0.75rem",
+            backgroundColor: activeBetAmount === amount ? "orange": "#f2f2f1",
+            color: activeBetAmount === amount ? "white" : "#666",
+            "&:hover": {
+              backgroundColor: activeBetAmount === amount ? "orange" : "#f2f2f1",
+            },
+          }}
+          onClick={() => {
+            handleBetAmount(amount);
+            setActiveBetAmount(amount);
+          }}
+        >
+          {amount}
+        </Button>
+      ))}
+    </Box>
+  </Grid>
+
+  {/* Quantity Section */}
+  <Grid item xs={6} mt={2}>
+    <Typography
+      variant="h6"
+      sx={{ color: "#666", fontSize: "1rem" }}
+    >
+      Quantity
+    </Typography>
+  </Grid>
+
+  {/* Quantity Controls */}
+  <Grid item xs={6} mt={2} sx={{ display: "flex", justifyContent: "flex-end", alignItems: "center" }}>
+    <IconButton onClick={() => setMultiplier(multiplier > 1 ? multiplier - 1 : 1)}>
+      <RemoveIcon fontSize="small" sx={{ color: "orange", fontSize: 30 }} />
+    </IconButton>
+
+    <TextField
+      value={multiplier}
+      onChange={(e) => {
+        const value = e.target.value;
+        if (/^\d*$/.test(value)) {
+          setMultiplier(value === "" ? "" : Math.max(1, Number(value)));
+        }
+      }}
+      sx={{
+        width: "50px",
+        textAlign: "center",
+        "& .MuiOutlinedInput-root": {
+          borderRadius: "4px",
+          backgroundColor: "white",
+          color: "#666",
+          textAlign: "center",
+          fontSize: "1rem",
+          "& input": {
+            textAlign: "center",
+            padding: "4px 8px",
+          },
+        },
+      }}
+      variant="outlined"
+      inputProps={{ min: 1, style: { textAlign: "center" } }}
+    />
+
+    <IconButton onClick={() => setMultiplier(multiplier + 1)}>
+      <AddIcon fontSize="small" sx={{ color: "orange", fontSize: 30 }} />
+    </IconButton>
+  </Grid>
+
+  {/* Multiplier Buttons */}
+  <Grid item xs={12} mt={2}>
+    <Grid container justifyContent="flex-end" sx={{ color: "#666" }}>
+      {[1, 5, 10, 20, 50, 100].map((mult) => (
+        <div
+          key={mult}
+          className={`button ${activeButton === mult ? "active" : ""}`}
+          onClick={() => {
+            handleMultiplier(mult);
+            setActiveButton(mult);
+          }}
+          style={
+            activeButton === mult
+              ? { backgroundColor: "orange", color: "white" }
+              : { backgroundColor: "#f2f2f1", color: "#666" }
+          }
+        >
+          X{mult}
+        </div>
+      ))}
+    </Grid>
+  </Grid>
+</Grid>
+
+
+<FormControlLabel
+      control={
+        <Radio
+          checked={agree}
+          onChange={() => setAgree(!agree)}
+          icon={<RadioButtonUncheckedIcon />}
+          checkedIcon={<CheckCircleIcon sx={{ color: "#4caf50" }} />} // Green check when selected
+        />
+      }
+      label="I Agree"
+      sx={{ color: "#666", fontSize: "1rem",marginLeft:1}}
+    />
+
+
+
+              <Grid item xs={12} mt={2}>
+                <Grid container justifyContent="space-around" spacing={0}>
+                  <Grid item xs={3}>
+                    <Button
+                      onClick={handleCancelBet}
+                      fullWidth
+                      style={{ backgroundColor: "#f2f2f1", color: "grey" }}
+                      variant="contained"
+                    >
+                      Cancel
+                    </Button>
+                  </Grid>
+                  <Grid item xs={9}>
+                    <Button
+                      onClick={handlePlaceBet}
+                      fullWidth
+                      style={{ background: "orange" }}
+                      variant="contained"
+                    >{`Total Amount: ${betAmount * multiplier}`}</Button>
                   </Grid>
                 </Grid>
               </Grid>
@@ -3059,7 +3276,7 @@ const LotteryAppk = ({ timerKey }) => {
           </Grid>
           <>{/* ...rest of the code... */}</>
 
-          <div
+          {/* <div
             style={{
               display: open ? "block" : "none",
               position: "absolute", // changed from fixed to absolute
@@ -3153,7 +3370,257 @@ const LotteryAppk = ({ timerKey }) => {
                 Close
               </Button>
             </div>
-          </div>
+          </div> */}
+
+
+<div
+  style={{
+    display: open ? "block" : "none",
+    position: "absolute",
+    zIndex: 2000,
+    left:5,
+    top: "120px",
+    width: "100%",
+    height: "100%",
+    overflow: "auto",
+    border: "none",
+    // backgroundColor: "rgba(59, 53, 53, 0.6)", // Backdrop effect
+  }}
+>
+
+  <div
+    style={{
+      backgroundColor: "transparent",
+      margin: "15% auto",
+      padding: 5,
+      width: "75%",
+      height: "55%",
+      backgroundImage: `url(${
+        gameResult === "Succeed"
+          ? "../../assets/images/missningBg-6f17b242.png"
+          : "../../assets/images/missningLBg-73e02111.png"
+      })`,
+      backgroundSize: "100% 100%",
+      backgroundRepeat: "no-repeat",
+      backgroundPosition: "center",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center",
+    }}
+  >
+    <br />
+    <br />
+    <br/>
+    <br/>
+    {/* Main Title */}
+    <Typography
+      variant="h5"
+      style={{
+        color: gameResult==="Succeed"? "red":"rgb(104,136,176)",
+        fontWeight: "bold",
+        textAlign: "center",
+        marginTop: "0",
+        marginBottom:"12px"
+      }}
+    >
+      {gameResult === "Succeed" ? "Congratulations" : "Sorry"}
+    </Typography>
+
+    {/* Lottery Results Section */}
+    <div
+  style={{
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    gap: "1px",
+    marginTop: "0px",
+  }}
+>
+  {/* Dice Section */}
+  <div
+    style={{
+      display: "flex",
+      justifyContent: "center",
+      gap: "4px",
+      padding: "4px 10px",
+    }}
+  >
+    {[1, 2, 3].map((num) => (
+      <div
+        key={num}
+        style={{
+          width: 30,
+          height: 30,
+          backgroundColor: "transparent",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <img src="https://goagameb.com/assets/png/n3-1432a6bd.png" style={{width:"20px"}}/>
+      </div>
+    ))}
+  </div>
+
+  {/* "Red 8 Big" Section */}
+  <div
+    style={{
+      display: "flex",
+      alignItems: "center",
+      gap: "8px",
+      padding: "4px 10px",
+    }}
+  >
+    {/* "Red" Tag */}
+    <div
+      style={{
+        background: "transparent",
+        border: "2px solid white",
+        padding: "4px 12px",
+        borderRadius: "20px",
+        color: "#fff",
+        fontWeight: "normal",
+        fontSize: "10px",
+        textAlign: "center",
+        minWidth: "20px",
+      }}
+    >
+      Red
+    </div>
+
+    {/* Number Circle */}
+    <div
+      style={{
+        background: "transparent",
+        border: "2px solid white",
+        padding: "2px 7px",
+        borderRadius: "50%",
+        color: "#fff",
+        fontWeight: "normal",
+        fontSize: "14px",
+        textAlign: "center",
+        minWidth: "5px",
+      }}
+    >
+      8
+    </div>
+
+    {/* "Big" Tag */}
+    <div
+      style={{
+        background: "transparent",
+        border: "2px solid white",
+        padding: "2px 10px",
+        borderRadius: "20px",
+        color: "#fff",
+        fontWeight: "normal",
+        fontSize: "10px",
+        textAlign: "center",
+        minWidth: "20px",
+      }}
+    >
+      Big
+    </div>
+  </div>
+</div>
+
+
+    {/* Ticket Style for Bonus Amount */}
+    <br/>
+    <br />
+    <Typography
+      variant="h7"
+      style={{
+        color: gameResult === "Succeed" ? "#28a745" : "rgb(153, 158, 165)",
+        fontWeight: "bold",
+      }}
+    >
+      {gameResult === "Succeed" ? "Bonus" : "Lose"}
+    </Typography>
+
+    <Typography
+      variant="h7"
+      style={{
+        color: gameResult === "Succeed" ? "#28a745" : "#dc3545",
+        fontWeight: "bold",
+        margin: "1px 0",
+      }}
+    >
+      ₹{parseFloat(winloss).toFixed(2)}
+    </Typography>
+
+    <Typography variant="body2" style={{ fontSize: "12px", fontWeight: "normal" }}>
+      Period: {popupTimer} {popupperiodid}
+    </Typography>
+
+    {/* Close Button */}
+    <br/>
+    <div
+          style={{
+            backgroundColor: "transparent",
+            color: "white",
+            marginTop: "10px",
+            display: "flex",
+            alignItems: "center",
+            gap: "6px",
+            padding: "8px 20px",
+            fontSize: "16px",
+          }}
+        >
+          <CheckCircleIcon
+            style={{
+              color: "#fff", // White Check Icon
+              fontSize: "10px",
+            }}
+          />
+          <Typography
+            variant="body2"
+            style={{
+              fontSize: "10px",
+              fontWeight: "bold",
+              color: "#ffffff",
+            }}
+          >
+            Auto close in 3 sec
+          </Typography>
+  </div>
+  </div>
+  <Button
+  onClick={() => setOpen(false)}
+  style={{
+    backgroundColor: "black",
+    color: "white",
+    marginTop: "-70px",
+    padding: "8px 20px",
+    fontSize: "16px",
+    opacity: "0.2",
+    borderRadius: "70px",
+  }}
+>
+  <CloseIcon />
+</Button>
+
+<div 
+    style={{
+      display: open ? "block" : "none",
+      position: "fixed",  // Ensures full-screen coverage
+      zIndex: -2000,
+      left: 0,
+      top: 0,  // Covers from the very top
+      width: "100%",
+      height: "100%",
+      backgroundColor: "rgba(59, 53, 53, 0.6)", // Backdrop effect
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+    }}
+  >
+
+</div>
+
+
+</div>
         </div>
         <br />
         <br />
