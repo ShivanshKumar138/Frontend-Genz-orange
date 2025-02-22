@@ -89,9 +89,13 @@ import {
               }
               sx={{ padding: 2 }}
             >
-              <ListItemIcon>
+              {/* <ListItemIcon>
                 <DescriptionIcon sx={{ color: "#4782ff", fontSize: 24 }} />
-              </ListItemIcon>
+              </ListItemIcon> */}
+              <img src="https://in.piccdn123.com/static/_template_/orange/img/my/privacyIcon.png" style={{
+                width:"25px",
+                marginRight:"30px"
+              }}/>
               <ListItemText primary="Confidentiality Agreement" />
             </ListItem>
             <Divider sx={{ mx: 2 }} />
@@ -103,9 +107,14 @@ import {
               }
               sx={{ padding: 2 }}
             >
-              <ListItemIcon>
+              {/* <ListItemIcon>
                 <DescriptionIcon sx={{ color: "#4782ff", fontSize: 24 }} />
-              </ListItemIcon>
+              </ListItemIcon> */}
+
+<img src="https://in.piccdn123.com/static/_template_/orange/img/my/riskProtocal.png" style={{
+                width:"25px",
+                marginRight:"30px"
+              }}/>
               <ListItemText primary="Risk Disclosure Agreement" />
             </ListItem>
             <Divider sx={{ mx: 2 }} />

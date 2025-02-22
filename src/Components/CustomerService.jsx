@@ -74,7 +74,7 @@ import {
         <Button
           variant="contained"
           fullWidth
-          sx={{ mt: 3, backgroundColor: "#1e88e5", "&:hover": { backgroundColor: "#1e88e5" }, py: 1.5, borderRadius: 2 }}
+          sx={{ mt: 3, backgroundColor: "rgb(255,142,41)", "&:hover": { backgroundColor: "rgb(255,142,41)" }, py: 1.5, borderRadius: 2 }}
         >
           Progress Query
         </Button>
