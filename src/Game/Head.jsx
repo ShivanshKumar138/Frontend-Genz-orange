@@ -927,7 +927,7 @@ const Head = ({ timerKey }) => {
               }}
             >
               <IconButton>
-                <VolumeUpIcon sx={{ color: "#4782ff" }} />
+                <VolumeUpIcon sx={{ color: "rgb(255,142,41)" }} />
               </IconButton>
 
               <Box sx={{ flex: 1, overflow: "hidden", padding: "0 10px" }}>
@@ -1001,7 +1001,7 @@ const Head = ({ timerKey }) => {
                   cursor: "pointer",
                   background:
                     activeId === image.id
-                      ? "rgb(238, 110, 42)"
+                      ? "linear-gradient(180deg, rgba(255, 150, 44, 0.46) 0%, #FFF 90.5%)"
                       : "transparent",
                   borderRadius: "10px",
                   display: "flex",
@@ -1011,14 +1011,14 @@ const Head = ({ timerKey }) => {
                 }}
               >
                 <img
-                  src={activeId === image.id ? image.altSrc : image.src}
+                  src={activeId === image.id ? "https://in.piccdn123.com/static/_template_/orange/img/game/time_cur.png" : image.src}
                   alt={image.subtitle}
                   style={{ width: "60%" }}
                 />
                 <div
                   style={{
                     textAlign: "center",
-                    color: activeId === image.id ? "#ffffff" : "black",
+                    color: activeId === image.id ? "black" : "grey",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
@@ -1061,7 +1061,7 @@ const Head = ({ timerKey }) => {
         height:"105px",
         maxWidth: "90%",
         margin: "auto",
-        background: "rgb(105,174,254)",
+        background: "rgb(255,142,41)",
         borderRadius: "15px",
         padding: "3px",
         display: "flex",
@@ -1721,7 +1721,7 @@ const Head = ({ timerKey }) => {
                       sx={{
                         height: "40px", // Adjust this value to change the tab height
                         backgroundColor:
-                          activeTab === index ? "rgb(253,106,25)" : "#ffffff",
+                          activeTab === index ? "rgb(255,142,41)" : "#ffffff",
                         color: activeTab === index ? "#ffffff" : "grey",
                         borderRadius: 1,
                         display: "flex",
@@ -1731,7 +1731,7 @@ const Head = ({ timerKey }) => {
                         transition: "all 0.3s",
                         "&:hover": {
                           backgroundColor:
-                            activeTab === index ? "rgb(253,106,25)" : "#f5f5f5",
+                            activeTab === index ? "rgb(255,142,41)" : "#f5f5f5",
                         },
                       }}
                     >
@@ -1816,10 +1816,10 @@ const Head = ({ timerKey }) => {
                                             "small"
                                           ? "#1876d2" // Background color for "small"
                                           : Number(bet.selectedItem) === 0
-                                          ? "linear-gradient(to right, rgb(253,86,92) 50%, rgb(182,89,254) 50%)"
+                                          ? "rgb(255,142,41)"
                                           : Number(bet.selectedItem) === 5
-                                          ? "linear-gradient(to right, rgb(64,173,114) 50%, rgb(182,89,254) 50%)"
-                                          : "rgb(71,129,255)",
+                                          ? "rgb(255,142,41)"
+                                          : "rgb(255,142,41)",
                                       color: "white",
                                       height: "40px",
                                       width: "40px",

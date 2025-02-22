@@ -279,6 +279,7 @@ const Register = () => {
             top: 0,
             zIndex: 1000,
             background: "linear-gradient(90deg, rgb(255,142,41) 0%, rgb(255,142,41) 100%)",
+            background: "rgb(255,142,40)",
             padding: "8px 16px",
             color: "#666",
           }}
@@ -348,6 +349,7 @@ const Register = () => {
           alignItems="flex-start"
           sx={{
             background: "linear-gradient(90deg, rgb(255,142,41) 0%, rgb(255,142,41) 100%)",
+            background: "rgb(255,142,40)",
             padding: "16px",
             color: "white",
             minHeight: "195px",
@@ -477,6 +479,9 @@ const Register = () => {
 <TabPanel value={tabValue} index={0}>
   <Box display="flex" alignItems="center" mt={2}>
     <SendToMobileIcon sx={{ color: "rgb(255,142,41)" }} />
+    {/* <SendToMobileIcon sx={{ color: "#4782ff" }} />
+     */}
+     <img src="https://in.piccdn123.com/static/_template_/orange/img/sign/mobile.png" style={{width:"25px"}}/>
     <FormLabel sx={{
       color: "#666",
       fontSize: "15px",
@@ -587,10 +592,12 @@ const Register = () => {
     fontSize: "0.1rem",
   }}>
     <FormLabel sx={{ color: "rgb(255,142,41)", fontSize: "12px" }}>
+    <FormLabel sx={{ color: "rgb(255,142,40)", fontSize: "12px" }}>
       The registered phone number cannot start with 0!
     </FormLabel>
     <br />
     <FormLabel sx={{ color: "rgb(255,142,41)", fontSize: "12px" }}>
+    <FormLabel sx={{ color: "rgb(255,142,40)", fontSize: "12px" }}>
       Example: 956521888
     </FormLabel>
   </Box>
@@ -761,6 +768,9 @@ const Register = () => {
 
               <Box display="flex" alignItems="center">
                 <LockIcon sx={{ color: "rgb(255,142,41)" }} />
+                {/* <LockIcon sx={{ color: "#4782ff" }} />
+                 */}
+                 <img src="https://in.piccdn123.com/static/_template_/orange/img/sign/pwd.png" style={{width:"25px"}}/>
                 <FormLabel
                   sx={{
                     color: "#666",
@@ -844,21 +854,27 @@ const Register = () => {
               >
                 {/* <SendToMobileIcon sx={{ color: "rgb(255,142,41)" }} /> */}
                 <FormLabel sx={{ color: "rgb(255,142,41)", fontSize: "12px" }}>
+                {/* <SendToMobileIcon sx={{ color: "#4782ff" }} /> */}
+                <FormLabel sx={{ color: "rgb(255,142,40)", fontSize: "12px" }}>
                   Password must contain uppercase and lowercase{" "}
                 </FormLabel>
                 <br />
                 <FormLabel sx={{ color: "rgb(255,142,41)", fontSize: "12px" }}>
+                <FormLabel sx={{ color: "rgb(255,142,40)", fontSize: "12px" }}>
                   {" "}
                   letters A-Z and numbers 0-9 and have more than{" "}
                 </FormLabel>
                 <br />
                 <FormLabel sx={{ color: "rgb(255,142,41)", fontSize: "12px" }}>
+                <FormLabel sx={{ color: "rgb(255,142,40)", fontSize: "12px" }}>
                   or equal to 8 digits{" "}
                 </FormLabel>
               </Box>
 
               <Box display="flex" alignItems="center">
                 <LockIcon sx={{ color: "rgb(255,142,41)" }} />
+                {/* <LockIcon sx={{ color: "#4782ff" }} /> */}
+                <img src="https://in.piccdn123.com/static/_template_/orange/img/sign/pwd.png" style={{width:"25px"}}/>
                 <FormLabel
                   sx={{
                     color: "#666",
@@ -985,6 +1001,8 @@ const Register = () => {
 
               <Box display="flex" alignItems="center" mt={2}>
                 <MoveToInboxIcon sx={{ color: "rgb(255,142,41)" }} />
+                {/* <MoveToInboxIcon sx={{ color: "#4782ff" }} /> */}
+                <img src="https://in.piccdn123.com/static/_template_/orange/img/sign/foget.png" style={{width:"25px"}}/>
                 <FormLabel
                   sx={{
                     color: "#666",
@@ -1080,7 +1098,7 @@ const Register = () => {
                 style={{
                   marginBottom: "8px",
                   background:
-                    "linear-gradient(90deg, rgb(255,142,41) 0%, rgb(255,142,41) 100%)",
+                    "rgb(255,142,40)",
                   borderRadius: "300px",
                   fontSize: "19px",
                   fontWeight: 700,
@@ -1105,7 +1123,7 @@ const Register = () => {
                 fullWidth
                 style={{
                   borderRadius: "300px",
-                  borderColor: "rgb(255,142,41)",
+                  borderColor: "rgb(255,142,40)",
                   marginBottom: "150px",
                   maxWidth: "330px",
                   marginTop: "10px",
@@ -1113,7 +1131,7 @@ const Register = () => {
               >
                 <span
                   style={{
-                    color: "rgb(255,142,41)",
+                    color: "rgb(255,142,40)",
                     marginLeft: "3px",
                     fontSize: "19px",
                     fontWeight: 600,

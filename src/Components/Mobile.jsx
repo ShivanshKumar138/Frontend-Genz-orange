@@ -102,7 +102,7 @@ const Mobile = ({ children }) => {
                 onClick={handleClick2}
                 onTouchEnd={handleClick}
               >
-                <img src="https://goagameb.com/assets/png/tg_bg-37fa3454.png" style={{width:"60px",height:"60px"}}/>
+                <img src={telegramIcon} style={{width:"62px",height:"60px"}}/>
               </IconButton>
               <br></br>
               <IconButton
@@ -110,7 +110,7 @@ const Mobile = ({ children }) => {
                 onClick={handleClick}
                 onTouchEnd={handleClick}
               >
-                <img src="https://in.piccdn123.com/static/_template_/orange/img/icon_sevice.png?v=2" alt="Customer Care" style={{ width: 60, height: 60 }} />
+                <img src="https://in.piccdn123.com/static/_template_/orange/img/icon_sevice.png?v=2" alt="Customer Care" style={{ width:58 , height: 60 }} />
               </IconButton>
             </Box>
           </Draggable>

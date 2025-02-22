@@ -346,7 +346,7 @@ const PromotionMain = ({ children }) => {
     position: "sticky",
     top: 0,
     zIndex: 1000,
-    backgroundColor: "#ffffff",
+    background: "linear-gradient(90deg, #FF962C 0%, #FD5810 100%)",
     padding: "12px 16px",
     color: "#1e2637",
   }}

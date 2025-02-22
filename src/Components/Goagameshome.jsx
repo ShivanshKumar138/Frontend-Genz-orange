@@ -330,25 +330,39 @@ const handleItemClick = useCallback((path) => {
   // };
 
 
-  const handleTabClick = (index) => {
-    console.log(index);
-    setActiveTab(index);
+  // const handleTabClick = (index) => {
+  //   console.log(index);
+  //   setActiveTab(index);
   
-    if (index >= 0 && index < 6) {
-      console.log("Inside")
-      // Scroll to Middle when clicking a tab from the second row
-      window.scrollTo({
-        top: document.documentElement.scrollHeight / 2,
-        behavior: "smooth",
-      });
-    } else if (index >= 6) {
-      // Scroll to Bottom when clicking a tab from the third row
-      window.scrollTo({
-        top: document.documentElement.scrollHeight,
-        behavior: "smooth",
-      });
-    }
-  };
+  //   if (index >= 0 && index < 6) {
+  //     console.log("Inside")
+  //     // Scroll to Middle when clicking a tab from the second row
+  //     window.scrollTo({
+  //       top: document.documentElement.scrollHeight / 2,
+  //       behavior: "smooth",
+  //     });
+  //   } else if (index >= 6) {
+  //     // Scroll to Bottom when clicking a tab from the third row
+  //     window.scrollTo({
+  //       top: document.documentElement.scrollHeight,
+  //       behavior: "smooth",
+  //     });
+  //   }
+  // };
+
+
+  const contentRef = useRef(null);
+
+const handleTabClick = (index) => {
+  setActiveTab(index);
+  
+  if (contentRef.current) {
+    contentRef.current.scrollIntoView({ 
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }
+};
   
   const SectionHeading = ({ title }) => (
 <Box
@@ -373,7 +387,7 @@ const handleItemClick = useCallback((path) => {
     onClick={onClick}
       sx={{
         height: '95px',
-        bgcolor: '#4D8FFF',
+        bgcolor: 'rgb(255,142,41)',
         borderRadius: '16px',
         p: 1,
         mb: 2,
@@ -496,7 +510,7 @@ const handleItemClick = useCallback((path) => {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              bgcolor: '#4D8FFF',
+              bgcolor: 'rgb(255,142,41)',
               borderRadius: '8px',
               cursor: 'pointer',
               color: '#fff',
@@ -527,12 +541,12 @@ const handleItemClick = useCallback((path) => {
           }}
         >
           
-<Grid container spacing={2} sx={{ mt: 0 }}>
+<Grid container spacing={2} sx={{ mt: 0 }} label>
   {/* First Row (3 items with background images) */}
   {tabs.slice(0, 3).map((tab, index) => (
   <Grid item xs={4} key={tab.id}>
     <Box
-    ref={tabsRef}
+    ref={contentRef}
       onClick={() => handleTabClick(index)}
       sx={{
         position: "relative",

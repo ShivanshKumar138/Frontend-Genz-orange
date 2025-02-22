@@ -573,7 +573,7 @@ const Home = ({ children }) => {
                 </IconButton>
               </Grid>
             </Grid>
-
+            <br/>
             {/* //content */}
             <Header>
               <ImageWrapper>

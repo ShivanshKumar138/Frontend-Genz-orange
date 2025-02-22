@@ -57,25 +57,25 @@ const images = [
   {
     id: 1,
     src: "../../games/assets/time-5d4e96a3.png",
-    altSrc: "/assets/blueclock.png",
+    altSrc: "https://in.piccdn123.com/static/_template_/orange/img/game/time_cur.png",
     subtitle: "1Min",
   },
   {
     id: 2,
     src: "../../games/assets/time-5d4e96a3.png",
-    altSrc: "/assets/blueclock.png",
+    altSrc: "https://in.piccdn123.com/static/_template_/orange/img/game/time_cur.png",
     subtitle: "3Min",
   },
   {
     id: 3,
     src: "../../games/assets/time-5d4e96a3.png",
-    altSrc: "/assets/blueclock.png",
+    altSrc: "https://in.piccdn123.com/static/_template_/orange/img/game/time_cur.png",
     subtitle: "5Min",
   },
   {
     id: 4,
     src: "../../games/assets/time-5d4e96a3.png",
-    altSrc: "/assets/blueclock.png",
+    altSrc: "https://in.piccdn123.com/static/_template_/orange/img/game/time_cur.png",
     subtitle: "10Min",
   },
 ];
@@ -789,7 +789,7 @@ const LotteryAppt = ({ timerKey }) => {
             direction="column"
             sx={{
               height: "300px",
-              background: "linear-gradient(90deg, #4782ff 0%, #59adff 100%)",
+              background: "rgb(255,142,40)",
               borderRadius: "0 0 70px 70px",
               textAlign: "center",
             }}
@@ -899,7 +899,7 @@ const LotteryAppt = ({ timerKey }) => {
               }}
             >
               <IconButton>
-                <VolumeUpIcon sx={{ color: "#4782ff" }} />
+                <VolumeUpIcon sx={{ color: "rgb(255,142,40)" }} />
               </IconButton>
 
               <Box sx={{ flex: 1, overflow: "hidden", padding: "0 10px" }}>
@@ -931,10 +931,10 @@ const LotteryAppt = ({ timerKey }) => {
                 variant="contained"
                 sx={{
                   background:
-                    "linear-gradient(90deg, #4782ff 0%, #59adff 100%)",
+                    "rgb(255,142,40)",
                   "&:hover": {
                     background:
-                      "linear-gradient(90deg, #4782ff 0%, #59adff 100%)",
+                      "rgb(255,142,40)",
                   },
                   borderRadius: "50px",
                   fontSize: "11px",
@@ -973,7 +973,7 @@ const LotteryAppt = ({ timerKey }) => {
                   cursor: "pointer",
                   background:
                     activeId === image.id
-                      ? "linear-gradient(to bottom, #4782ff, #4782ff)"
+                      ? "linear-gradient(180deg, rgba(255, 150, 44, 0.46) 0%, #FFF 90.5%)"
                       : "transparent",
                   borderRadius: "10px",
                   display: "flex",
@@ -990,7 +990,7 @@ const LotteryAppt = ({ timerKey }) => {
                 <div
                   style={{
                     textAlign: "center",
-                    color: activeId === image.id ? "#ffffff" : "black",
+                    color: activeId === image.id ? "black" : "grey",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
@@ -1031,7 +1031,7 @@ const LotteryAppt = ({ timerKey }) => {
               marginRight: "auto",
               maxWidth: "95%",
               boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-              background: "linear-gradient(90deg, #4782ff 0%, #59adff 100%)",
+              background: "rgb(229, 139, 60)",
               borderRadius: "0.7rem",
               backgroundSize: "cover",
               backgroundPosition: "center",
@@ -1078,7 +1078,7 @@ const LotteryAppt = ({ timerKey }) => {
                   flex: "0 0 auto", // Fixed width without shrinking
                   width: "80px",
                   height: "25px",
-                  background: "linear-gradient(90deg, #4782ff 0%, #59adff 100%)",
+                  background: "rgb(255,142,40)",
                   color: "white",
                   border: "1px solid white",
                   borderRadius: "15px",
@@ -1104,7 +1104,7 @@ const LotteryAppt = ({ timerKey }) => {
                   width: "120px",
                   height: "25px",
                   border: "1px solid white",
-                  background: "linear-gradient(90deg, #4782ff 0%, #59adff 100%)",
+                  background: "rgb(255,142,40)",
                   color: "white",
                   borderRadius: "15px",
                   display: "flex",
@@ -1963,7 +1963,7 @@ const LotteryAppt = ({ timerKey }) => {
                       sx={{
                         height: "40px", // Adjust this value to change the tab height
                         backgroundColor:
-                          activeTab === index ? "#4782ff" : "#ffffff",
+                          activeTab === index ? "rgb(255,142,40)" : "#ffffff",
                         color: activeTab === index ? "#ffffff" : "grey",
                         borderRadius: 1,
                         display: "flex",
@@ -1973,7 +1973,7 @@ const LotteryAppt = ({ timerKey }) => {
                         transition: "all 0.3s",
                         "&:hover": {
                           backgroundColor:
-                            activeTab === index ? "#4782ff" : "#f5f5f5",
+                            activeTab === index ? "rgb(255,142,40)" : "#f5f5f5",
                         },
                       }}
                     >

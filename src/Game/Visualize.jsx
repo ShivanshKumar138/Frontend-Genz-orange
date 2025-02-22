@@ -26,7 +26,7 @@ const CustomTable = ({ data }) => {
         key={column.id}
         sx={{
           width: column.width,
-          background: "linear-gradient(90deg, #4782ff 0%, #4782ff 100%)", // Changed to a golden yellow color
+          background: "rgb(255,142,41)", // Changed to a golden yellow color
           color: "white",
           padding: "2.5% 5.8%",
           borderTopLeftRadius: index === 0 ? "10px" : "0",

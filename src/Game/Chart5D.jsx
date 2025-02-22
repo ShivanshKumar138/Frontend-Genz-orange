@@ -190,7 +190,7 @@ const NumberTableWithLines = ({ paginatedData, selectedTab }) => {
           key={column.id}
           sx={{
             width: column.width,
-            background: "linear-gradient(90deg, #4782ff 0%, #59adff 100%)",
+            background: "rgb(255,142,40)",
             color: "white",
             padding: "2.3% 5.6%",
             borderTopLeftRadius: index === 0 ? "10px" : "0",
