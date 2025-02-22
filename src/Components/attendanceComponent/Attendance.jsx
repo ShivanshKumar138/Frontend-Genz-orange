@@ -155,7 +155,7 @@ function Attendance() {
             width: "90%",
             height: "35px",
             borderRadius: `20px`,
-            background: `linear-gradient(to right,#4782ff , #4782ff)`,
+            background: `linear-gradient(to right,#F99000 , #F99000)`,
             cursor: "pointer",
             border: "none",
             fontSize: "0.8em",

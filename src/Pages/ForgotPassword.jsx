@@ -77,7 +77,7 @@ const ForgotPassword = () => {
           position: "sticky",
           top: 0,
           zIndex: 1000,
-          background: "linear-gradient(90deg, #4782ff 0%, #59adff 100%)",
+          background: "linear-gradient(90deg, rgb(255,142,41) 0%, rgb(255,142,41) 100%)",
           padding: "8px 16px",
           color: "black",
         }}
@@ -147,7 +147,7 @@ const ForgotPassword = () => {
         justifyContent="flex-start"
         alignItems="flex-start"
         sx={{
-          background: "linear-gradient(90deg, #4782ff 0%, #59adff 100%)",
+          background: "linear-gradient(90deg, rgb(255,142,41) 0%, rgb(255,142,41) 100%)",
           padding: "16px",
           color: "white",
           minHeight: "fit-content",
@@ -174,16 +174,16 @@ const ForgotPassword = () => {
       >
         <Box sx={{ mx: 2, mt: 1 }}>
           <Box sx={{ textAlign: "center", mb: 2 }}>
-            <SendToMobileIcon sx={{ color: "#4782ff" }} />
-            <Typography variant="body1" sx={{ color: "#4782ff" }}>
+            <SendToMobileIcon sx={{ color: "rgb(255,142,41)" }} />
+            <Typography variant="body1" sx={{ color: "rgb(255,142,41)" }}>
               Phone reset
             </Typography>
           </Box>
 
-          <Divider sx={{ bgcolor: "#4782ff", mb: 2 }} />
+          <Divider sx={{ bgcolor: "rgb(255,142,41)", mb: 2 }} />
 
           <Box sx={{ display: "flex", mb: 1 }}>
-            <SendToMobileIcon sx={{ color: "#4782ff", mr: 1 }} />
+            <SendToMobileIcon sx={{ color: "rgb(255,142,41)", mr: 1 }} />
             <Typography variant="body2" sx={{ color: "black", fontSize: 17 }}>
               Phone number
             </Typography>
@@ -220,7 +220,7 @@ const ForgotPassword = () => {
                 borderRadius: 4,
                 "& .MuiOutlinedInput-root": {
                   "&.Mui-focused fieldset": {
-                    borderColor: "#4782ff",
+                    borderColor: "rgb(255,142,41)",
                   },
                   "&:hover fieldset": {
                     borderColor: "#fff",
@@ -235,7 +235,7 @@ const ForgotPassword = () => {
           </Box>
 
           <Box sx={{ display: "flex", alignItems: "center", mb: 1, mt: 3 }}>
-            <LockIcon sx={{ mr: 1, color: "#4782ff" }} />
+            <LockIcon sx={{ mr: 1, color: "rgb(255,142,41)" }} />
             <Typography variant="body2" sx={{ color: "black", fontSize: 17 }}>
               A new password
             </Typography>
@@ -252,7 +252,7 @@ const ForgotPassword = () => {
               borderRadius: 4,
               "& .MuiOutlinedInput-root": {
                 "&.Mui-focused fieldset": {
-                  borderColor: "#4782ff",
+                  borderColor: "rgb(255,142,41)",
                 },
                 "&:hover fieldset": {
                   borderColor: "#fff",
@@ -280,7 +280,7 @@ const ForgotPassword = () => {
           />
 
           <Box sx={{ display: "flex", alignItems: "center", mb: 1, mt: 2 }}>
-            <LockIcon sx={{ mr: 1, color: "#4782ff" }} />
+            <LockIcon sx={{ mr: 1, color: "rgb(255,142,41)" }} />
             <Typography variant="body2" sx={{ color: "black", fontSize: 17 }}>
               Confirm new password
             </Typography>
@@ -297,7 +297,7 @@ const ForgotPassword = () => {
               borderRadius: 4,
               "& .MuiOutlinedInput-root": {
                 "&.Mui-focused fieldset": {
-                  borderColor: "#4782ff",
+                  borderColor: "rgb(255,142,41)",
                 },
                 "&:hover fieldset": {
                   borderColor: "#fff",
@@ -325,7 +325,7 @@ const ForgotPassword = () => {
           />
 
           <Box sx={{ display: "flex", alignItems: "center", mb: 1, mt: 2 }}>
-            <GppGoodIcon sx={{ mr: 1, color: "#4782ff" }} />
+            <GppGoodIcon sx={{ mr: 1, color: "rgb(255,142,41)" }} />
             <Typography variant="body2" sx={{ color: "black", fontSize: 17 }}>
               Verification Code
             </Typography>
@@ -341,7 +341,7 @@ const ForgotPassword = () => {
               borderRadius: 4,
               "& .MuiOutlinedInput-root": {
                 "&.Mui-focused fieldset": {
-                  borderColor: "#4782ff",
+                  borderColor: "rgb(255,142,41)",
                 },
                 "&:hover fieldset": {
                   borderColor: "#fff",
@@ -359,7 +359,7 @@ const ForgotPassword = () => {
                     variant="contained"
                     size="medium"
                     sx={{
-                      bgcolor: "#4782ff",
+                      bgcolor: "rgb(255,142,41)",
                       color: "white",
                       borderRadius: 50,
                       textTransform: "capitalize",
@@ -384,9 +384,9 @@ const ForgotPassword = () => {
                     height: 24,
                     ml: 2,
                     mr: 1,
-                    color: "#4782ff", // Default color for the checkbox
+                    color: "rgb(255,142,41)", // Default color for the checkbox
                     "&.Mui-checked": {
-                      color: "#4782ff", // Color when the checkbox is checked
+                      color: "rgb(255,142,41)", // Color when the checkbox is checked
                     },
                   }}
                 />
@@ -406,11 +406,11 @@ const ForgotPassword = () => {
                 variant="contained"
                 sx={{
                   width: "60%",
-                  bgcolor: "#4782ff",
+                  bgcolor: "rgb(255,142,41)",
                   color: "white",
                   textTransform: "capitalize",
                   borderRadius: 50,
-                  "&:hover": { bgcolor: "#4782ff" },
+                  "&:hover": { bgcolor: "rgb(255,142,41)" },
                 }}
               >
                 Reset

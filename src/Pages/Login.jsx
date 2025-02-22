@@ -197,7 +197,7 @@ const Login = () => {
   direction="column"
 >
   <Typography 
-    variant="h1" 
+    variant="h5" 
     sx={{
       position: "absolute",
       right: "-20px",
@@ -211,11 +211,11 @@ const Login = () => {
       userSelect: "none"
     }}
   >
-    G
+    747
   </Typography>
   
   <Typography variant="h5" style={{ fontSize: "23px", fontWeight: 700, fontFamily: "helvetica" }}>
-    Mahakal Club
+    747 Lottery 
   </Typography>
   
   <Typography
@@ -236,7 +236,7 @@ const Login = () => {
       border: "none",
       padding: 0,
       margin: 0,
-      color: "#4782ff",
+      color: "rgb(255,142,41)",
       cursor: "pointer",
       textTransform: "none",
       textDecoration: "underline",
@@ -270,7 +270,7 @@ const Login = () => {
               onChange={handleTabChange}
               TabIndicatorProps={{
                 style: {
-                  background: "linear-gradient(90deg, #4782ff 0%, #59adff 100%)",
+                  background: "linear-gradient(90deg, rgb(255,142,41) 0%, #59adff 100%)",
                   width: "50%",
                   textAlign: "center",
                 },
@@ -281,24 +281,24 @@ const Login = () => {
                 icon={
                   <SendToMobileIcon
                     style={{
-                      color: tabValue === 0 ? "#4782ff" : "grey",
+                      color: tabValue === 0 ? "rgb(255,142,41)" : "grey",
                     }}
                   />
                 }
                 label="phone number"
-                style={{ color: tabValue === 0 ? "#4782ff" : "grey" }}
+                style={{ color: tabValue === 0 ? "rgb(255,142,41)" : "grey" }}
               />
               <Tab
                 sx={{ width: "50%" }}
                 icon={
                   <EmailIcon
                     style={{
-                      color: tabValue === 1 ? "#4782ff" : "grey",
+                      color: tabValue === 1 ? "rgb(255,142,41)" : "grey",
                     }}
                   />
                 }
                 label="Email"
-                style={{ color: tabValue === 1 ? "#4782ff" : "grey" }}
+                style={{ color: tabValue === 1 ? "rgb(255,142,41)" : "grey" }}
               />
             </Tabs> */}
             <TabPanel value={tabValue} index={0}>
@@ -412,7 +412,7 @@ const Login = () => {
             </TabPanel>
             {/* <TabPanel value={tabValue} index={1}>
               <Box display="flex" alignItems="center" mt={2}>
-                <EmailIcon sx={{ color: "#4782ff" }} />
+                <EmailIcon sx={{ color: "rgb(255,142,41)" }} />
                 <FormLabel sx={{ marginLeft: "10px", color: "black" }}>
                   Email
                 </FormLabel>
@@ -589,7 +589,7 @@ const Login = () => {
               fullWidth
               style={{
                 borderRadius: "300px",
-                borderColor: "#4782ff",
+                borderColor: "rgb(255,142,41)",
                 maxWidth: "330px",
               }}
             >
@@ -654,7 +654,7 @@ const Login = () => {
             alignItems="center"
             justifyContent="center"
             sx={{ padding: "16px", marginTop: "-40px", cursor: "pointer" }}
-            onClick={() => navigate("/support")}
+            
           >
             <Typography
               variant="subtitle1"

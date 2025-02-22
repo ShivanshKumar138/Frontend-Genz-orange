@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
   },
   icon: {
     marginRight: theme.spacing(2),
-    color: "#4782ff",
+    color: "rgb(255,142,41)",
   },
   input: {
     flexGrow: 1,
@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   saveButton: {
-    background: "linear-gradient(90deg, #4782ff 0%, #59adff 100%)",
+    background: "linear-gradient(90deg, rgb(255,142,41) 0%, #FF952A 100%)",
     color: "#ffffff",
     borderRadius: "24px",
     padding: "12px",
@@ -233,7 +233,7 @@ const UsdtAddress = () => {
               </Box>
               <Box className={classes.inputContainer}>
                 <Typography variant="subtitle1">{network}</Typography>
-                <EditIcon style={{ color: "#4782ff", marginLeft: 8 }} />
+                <EditIcon style={{ color: "rgb(255,142,41)", marginLeft: 8 }} />
               </Box>
             </Box>
 

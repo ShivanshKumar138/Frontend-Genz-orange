@@ -190,7 +190,7 @@ const InvitationBonusComponent = () => {
       return {
         text: "Claim",
         disabled: false,
-        color: "#4782ff",
+        color: "rgb(255,142,41)",
       };
     }
 
@@ -214,7 +214,7 @@ const InvitationBonusComponent = () => {
         <Button
           variant="contained"
           onClick={fetchEligibilityStatus}
-          sx={{ bgcolor: "#4782ff" }}
+          sx={{ bgcolor: "rgb(255,142,41)" }}
         >
           Retry
         </Button>
@@ -242,7 +242,7 @@ const InvitationBonusComponent = () => {
           mx: "auto",
         }}
       >
-        <AppBar position="static" sx={{ bgcolor: "#4782ff" }}>
+        <AppBar position="static" sx={{ bgcolor: "rgb(255,142,41)" }}>
           <Toolbar>
             <Grid item xs={2} textAlign="left">
               <IconButton color="inherit" onClick={handleBackClick}>
@@ -392,7 +392,7 @@ const InvitationBonusComponent = () => {
                       variant="contained"
                       size="small"
                       sx={{
-                        bgcolor: "#4782ff",
+                        bgcolor: "rgb(255,142,41)",
                         color: "white",
                         mr: 1,
                         textTransform: "none",
@@ -410,7 +410,7 @@ const InvitationBonusComponent = () => {
                   </Box>
                   <Typography
                     variant="h6"
-                    color="#4782ff"
+                    color="rgb(255,142,41)"
                     fontWeight="bold"
                     sx={{ fontSize: "16px" }}
                   >
@@ -453,7 +453,7 @@ const InvitationBonusComponent = () => {
                     <Typography
                       variant="body1"
                       fontWeight="bold"
-                      color="#4782ff"
+                      color="rgb(255,142,41)"
                     >
                       ₹{bonus.minDepositAmount.toFixed(2)}
                     </Typography>
@@ -478,11 +478,11 @@ const InvitationBonusComponent = () => {
                       mb: 1,
                     }}
                   >
-                    <Typography variant="body1" sx={{ color: "#4782ff" }}>
+                    <Typography variant="body1" sx={{ color: "rgb(255,142,41)" }}>
                       {bonus.progress.referrals.total} /{" "}
                       {bonus.progress.referrals.required}
                     </Typography>
-                    <Typography variant="body1" sx={{ color: "#4782ff" }}>
+                    <Typography variant="body1" sx={{ color: "rgb(255,142,41)" }}>
                       {bonus.progress.referrals.qualifying} /{" "}
                       {bonus.progress.referrals.required}
                     </Typography>

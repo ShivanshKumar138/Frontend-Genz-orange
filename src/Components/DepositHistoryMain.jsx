@@ -227,7 +227,7 @@ const DepositHistoryMain = () => {
                 <Grid item xs={2}>
                   <IconButton
                     onClick={() => navigate(-1)}
-                    sx={{ color: "black", ml: -5 }}
+                    sx={{ color: "white", ml: -5 }}
                   >
                     <ArrowBackIosNewIcon />
                   </IconButton>
@@ -236,7 +236,7 @@ const DepositHistoryMain = () => {
                   <Typography
                     variant="h6"
                     sx={{
-                      color: "black",
+                      color: "white",
                       flexGrow: 1,
                       textAlign: "center",
                       mr: 8,

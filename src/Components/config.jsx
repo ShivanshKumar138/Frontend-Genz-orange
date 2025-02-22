@@ -1,7 +1,7 @@
 // **************LocalHost******************
 
-export const domain = 'https://kwsdemo.fun';
-export const wssdomain = 'wss://kwsdemo.fun';
+export const domain = 'https://api.mahakalclub.in';
+export const wssdomain = 'wss://api.mahakalclub.in';
 
 
 
