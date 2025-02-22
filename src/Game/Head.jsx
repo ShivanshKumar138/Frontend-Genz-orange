@@ -927,7 +927,7 @@ const Head = ({ timerKey }) => {
               }}
             >
               <IconButton>
-                <VolumeUpIcon sx={{ color: "#4782ff" }} />
+                <VolumeUpIcon sx={{ color: "rgb(255,142,41)" }} />
               </IconButton>
 
               <Box sx={{ flex: 1, overflow: "hidden", padding: "0 10px" }}>
@@ -1001,7 +1001,7 @@ const Head = ({ timerKey }) => {
                   cursor: "pointer",
                   background:
                     activeId === image.id
-                      ? "rgb(238, 110, 42)"
+                      ? "linear-gradient(180deg, rgba(255, 150, 44, 0.46) 0%, #FFF 90.5%)"
                       : "transparent",
                   borderRadius: "10px",
                   display: "flex",
@@ -1011,14 +1011,14 @@ const Head = ({ timerKey }) => {
                 }}
               >
                 <img
-                  src={activeId === image.id ? image.altSrc : image.src}
+                  src={activeId === image.id ? "https://in.piccdn123.com/static/_template_/orange/img/game/time_cur.png" : image.src}
                   alt={image.subtitle}
                   style={{ width: "60%" }}
                 />
                 <div
                   style={{
                     textAlign: "center",
-                    color: activeId === image.id ? "#ffffff" : "black",
+                    color: activeId === image.id ? "black" : "grey",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",

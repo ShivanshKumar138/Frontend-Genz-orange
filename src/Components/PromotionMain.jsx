@@ -33,20 +33,20 @@ const depositOptions = [
 ];
 
 const options = [
-  { label: "Copy invitation code", image: "/assets/banners/svgexport-11.png" },
-  { label: "Subordinate data", image: "/assets/banners/svgexport-7.png" },
+  { label: "Copy invitation code", image: "https://in.piccdn123.com/static/_template_/orange/img/promotion/copy_code.png" },
+  { label: "Subordinate data", image: "https://in.piccdn123.com/static/_template_/orange/img/promotion/team_port.png" },
   {
     label: "Commission details",
-    image: "/assets/banners/svgexport-9.png",
+    image: "https://in.piccdn123.com/static/_template_/orange/img/promotion/commission.png",
   },
-  { label: "Invitation rules", image: "/assets/banners/svgexport-10.png" },
+  { label: "Invitation rules", image: "https://in.piccdn123.com/static/_template_/orange/img/promotion/rule.png" },
   {
     label: "New Subordinates",
-    image: "/assets/banners/svgexport-5.png",
+    image: "https://in.piccdn123.com/static/_template_/orange/img/promotion/rebateRatio.png",
   },
   {
     label: "Agent line customer service",
-    image: "/assets/banners/svgexport-12.png",
+    image: "https://in.piccdn123.com/static/_template_/orange/img/promotion/server.png",
   },
 ];
 
@@ -346,7 +346,7 @@ const PromotionMain = ({ children }) => {
     position: "sticky",
     top: 0,
     zIndex: 1000,
-    backgroundColor: "#ffffff",
+    background: "linear-gradient(90deg, #FF962C 0%, #FD5810 100%)",
     padding: "12px 16px",
     color: "#1e2637",
   }}
@@ -386,7 +386,7 @@ const PromotionMain = ({ children }) => {
                 xs={12}
                 sx={{
                   borderRadius: "0px 0px 0 0",
-                  background: 'linear-gradient(#94C3FB, #4884ff), url("https://goagamea.com/assets/png/promotionbg-13880556.png")',
+                  background: 'linear-gradient(90deg, #FF962C 0%, #FD5810 100%)',
                   backgroundBlendMode: "overlay",
                   backgroundSize: "cover",
                   backgroundPosition: "center",
@@ -410,7 +410,7 @@ const PromotionMain = ({ children }) => {
 
                 <Typography
                   variant="body2"
-                  color="#4884FF"
+                  color="rgb(255,142,41)"
                   backgroundColor="#FFFFFF"
                   align="center"
                   mt="3px"
@@ -447,8 +447,8 @@ const PromotionMain = ({ children }) => {
                     xs={12}
                     sx={{
                       borderRadius: "8px 8px 0 0",
-                      background: "#4883ff",
-                      borderRight: "1px solid #4883ff",
+                      background: "rgb(238, 145, 63)",
+                      borderRight: "rgb(255,142,41)",
                       padding: "0.6rem",
                     }}
                   >
@@ -551,9 +551,9 @@ const PromotionMain = ({ children }) => {
                 marginRight: "auto",
                 marginTop: "10px", // Adjust as needed
                 marginBottom: "10px",
-                background: "linear-gradient(180deg, #4A89FF 0%, #4A89FF 30%, #4A89FF 100%)",
+                background: "linear-gradient(90deg, #FF962C 0%, #FD5810 100%)",
                 "&:hover": {
-                  background: "linear-gradient(180deg, #4A89FF 0%, #4A89FF 30%, #4A89FF 100%)",
+                  background: "linear-gradient(90deg, #FF962C 0%, #FD5810 100%)",
                 },
                 color: "#ffffff",
                 borderRadius: "20px", // Adjust as needed
@@ -656,7 +656,7 @@ const PromotionMain = ({ children }) => {
               <Grid container alignItems="center" sx={{ marginBottom: "5px" }}>
                 <Grid item>
                 <img
-    src="/assets/promotion.png" // Replace with your image path
+    src="https://in.piccdn123.com/static/_template_/orange/img/promotion/money.png" // Replace with your image path
     alt="Promotion icon"
     style={{
       width: '25px',
