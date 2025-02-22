@@ -1061,7 +1061,7 @@ const Head = ({ timerKey }) => {
         height:"105px",
         maxWidth: "90%",
         margin: "auto",
-        background: "rgb(105,174,254)",
+        background: "rgb(255,142,41)",
         borderRadius: "15px",
         padding: "3px",
         display: "flex",
@@ -1721,7 +1721,7 @@ const Head = ({ timerKey }) => {
                       sx={{
                         height: "40px", // Adjust this value to change the tab height
                         backgroundColor:
-                          activeTab === index ? "rgb(253,106,25)" : "#ffffff",
+                          activeTab === index ? "rgb(255,142,41)" : "#ffffff",
                         color: activeTab === index ? "#ffffff" : "grey",
                         borderRadius: 1,
                         display: "flex",
@@ -1731,7 +1731,7 @@ const Head = ({ timerKey }) => {
                         transition: "all 0.3s",
                         "&:hover": {
                           backgroundColor:
-                            activeTab === index ? "rgb(253,106,25)" : "#f5f5f5",
+                            activeTab === index ? "rgb(255,142,41)" : "#f5f5f5",
                         },
                       }}
                     >
@@ -1816,10 +1816,10 @@ const Head = ({ timerKey }) => {
                                             "small"
                                           ? "#1876d2" // Background color for "small"
                                           : Number(bet.selectedItem) === 0
-                                          ? "linear-gradient(to right, rgb(253,86,92) 50%, rgb(182,89,254) 50%)"
+                                          ? "rgb(255,142,41)"
                                           : Number(bet.selectedItem) === 5
-                                          ? "linear-gradient(to right, rgb(64,173,114) 50%, rgb(182,89,254) 50%)"
-                                          : "rgb(71,129,255)",
+                                          ? "rgb(255,142,41)"
+                                          : "rgb(255,142,41)",
                                       color: "white",
                                       height: "40px",
                                       width: "40px",

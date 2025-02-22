@@ -2225,7 +2225,7 @@ const LotteryAppk = ({ timerKey }) => {
                   <Tab
                     label="Total"
                     style={{
-                      backgroundColor: values === 0 ? "#4782ff" : "#f2f2f1",
+                      backgroundColor: values === 0 ? "rgb(255,142,41)" : "#f2f2f1",
                       color: values === 0 ? "#ffffff" : "grey",
                       borderBottom: values === 0 ? "none" : "",
                       borderRadius: "5px",
@@ -2237,7 +2237,7 @@ const LotteryAppk = ({ timerKey }) => {
                   <Tab
                     label="2 same"
                     style={{
-                      backgroundColor: values === 1 ? "#4782ff" : "#f2f2f1",
+                      backgroundColor: values === 1 ? "rgb(255,142,41)" : "#f2f2f1",
                       color: values === 1 ? "#ffffff" : "grey",
                       borderBottom: values === 1 ? "none" : "",
                       borderRadius: "5px",
@@ -2249,7 +2249,7 @@ const LotteryAppk = ({ timerKey }) => {
                   <Tab
                     label="3 same"
                     style={{
-                      backgroundColor: values === 2 ? "#4782ff" : "#f2f2f1",
+                      backgroundColor: values === 2 ? "rgb(255,142,41)" : "#f2f2f1",
                       color: values === 2 ? "#ffffff" : "grey",
                       borderBottom: values === 2 ? "none" : "",
                       borderRadius: "5px",
@@ -2261,7 +2261,7 @@ const LotteryAppk = ({ timerKey }) => {
                   <Tab
                     label="Different"
                     style={{
-                      backgroundColor: values === 3 ? "#4782ff" : "#f2f2f1",
+                      backgroundColor: values === 3 ? "rgb(255,142,41)" : "#f2f2f1",
                       color: values === 3 ? "#ffffff" : "grey",
                       borderBottom: values === 3 ? "none" : "",
                       borderRadius: "5px",
