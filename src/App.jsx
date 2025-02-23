@@ -82,7 +82,7 @@ import { initializeAnalytics, logPageView } from "./Components/GoogleAnalytics";
 import { useLocation } from "react-router-dom";
 import Allgames from "./Pages/Allgames";
 import Depositissue from "./Pages/Depositissue";
-
+import Service from "./Pages/Service";
 const gameData = [
   {
     id: 1,
@@ -790,6 +790,7 @@ const App = () => {
               }
             />
             <Route path="/" element={<OnePage />} />
+            <Route path="/service" element={<Service/>}/>
           </Routes>
         </Router>
       </div>
