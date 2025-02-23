@@ -27,7 +27,7 @@ const Mobile = ({ children }) => {
 
   const handleClick = () => {
     if (!isDragging) {
-      window.location.href = "/customer-service";
+      window.location.href = "/service";
     }
   };
 

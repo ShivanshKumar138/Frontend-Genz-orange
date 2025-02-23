@@ -12,19 +12,19 @@ import {
     Button,
     Container,
   } from "@mui/material";
-  import HomeIcon from "@mui/icons-material/Home";
-  import LockIcon from "@mui/icons-material/Lock";
-  import AccountBoxIcon from "@mui/icons-material/AccountBox";
-  import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
-  import SupportAgentIcon from "@mui/icons-material/SupportAgent";
-  import LanguageIcon from "@mui/icons-material/Language";
+import HomeIcon from "@mui/icons-material/Home";
+import LockIcon from "@mui/icons-material/Lock";
+import AccountBoxIcon from "@mui/icons-material/AccountBox";
+import SportsEsportsIcon from "@mui/icons-material/SportsEsports";
+import SupportAgentIcon from "@mui/icons-material/SupportAgent";
+import LanguageIcon from "@mui/icons-material/Language";
 
-
+import { Link } from "react-router-dom";
   const services = [
-    { icon: <LockIcon color="primary" />, text: "Change ID Login Password" },
-    { icon: <AccountBoxIcon color="primary" />, text: "Retrieve Login ID Account" },
-    { icon: <SportsEsportsIcon color="primary" />, text: "Game Problems" },
-    { icon: <SupportAgentIcon sx={{ color: "red" }} />, text: "Online service" },
+    { icon: <LockIcon color="primary" />, text: "Change ID Login Password" ,path:"/changePassword"},
+    { icon: <AccountBoxIcon color="primary" />, text: "Retrieve Login ID Account" ,path:"/retrieve"},
+    { icon: <SportsEsportsIcon color="primary" />, text: "Game Problems" ,path:"/problems"},
+    { icon: <SupportAgentIcon sx={{ color: "red" }} />, text: "Online service" ,path:"/customer-service"},
   ];
   
 
@@ -73,14 +73,34 @@ const Service = () => {
         <Typography variant="h6" fontWeight="bold">
           Self Service
         </Typography>
-        <List sx={{ backgroundColor: "white", borderRadius: "8px", boxShadow: 1 }}>
+        {/* <List sx={{ backgroundColor: "white", borderRadius: "8px", boxShadow: 1 ,textDecoration:"none"}}>
           {services.map((service, index) => (
             <ListItem key={index} button divider={index !== services.length - 1}>
+            <Link to={service.path}>
               <ListItemIcon>{service.icon}</ListItemIcon>
-              <ListItemText primary={service.text} />
+              <span style={{textDecoration:"none"}}>{service.text}</span>
+            </Link>
             </ListItem>
           ))}
-        </List>
+        </List> */}
+
+
+<List sx={{ backgroundColor: "white", borderRadius: "8px", boxShadow: 1 }}>
+  {services.map((service, index) => (
+    <ListItem
+      key={index}
+      component={Link}  // Make ListItem a Link
+      to={service.path}
+      button
+      divider={index !== services.length - 1}
+      sx={{ textDecoration: "none", color: "inherit" }} // Prevent default styling
+    >
+      <ListItemIcon>{service.icon}</ListItemIcon>
+      <span>{service.text}</span>
+    </ListItem>
+  ))}
+</List>
+
       </Container>
 
       {/* Footer Section */}

@@ -83,6 +83,9 @@ import { useLocation } from "react-router-dom";
 import Allgames from "./Pages/Allgames";
 import Depositissue from "./Pages/Depositissue";
 import Service from "./Pages/Service";
+import ChangePassword from "./Pages/ChangePassword";
+import RetrieveLogin from "./Pages/RetrieveLogin";
+import GameProblem from "./Pages/GameProblem";
 const gameData = [
   {
     id: 1,
@@ -791,6 +794,9 @@ const App = () => {
             />
             <Route path="/" element={<OnePage />} />
             <Route path="/service" element={<Service/>}/>
+            <Route path="/changePassword" element={<ChangePassword/>}/>
+            <Route path="/retrieve" element={<RetrieveLogin/>}/>
+            <Route path="/problems" element={<GameProblem/>}/>
           </Routes>
         </Router>
       </div>
