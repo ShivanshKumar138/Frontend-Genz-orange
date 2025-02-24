@@ -15,10 +15,10 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 import { useState } from 'react';
-  
+import { useNavigate } from 'react-router-dom';
 const ChangePassword = () => {
     const [images, setImages] = useState({});
-
+    const navigate=useNavigate();
     const handleImageChange = (event, field) => {
       const file = event.target.files[0];
       if (file) {
@@ -32,7 +32,7 @@ const ChangePassword = () => {
       <AppBar position="static" sx={{ backgroundColor: "orange", boxShadow: 1 }}>
         <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
           <IconButton edge="start">
-            <ArrowBackIcon sx={{ color: "black" }} />
+            <ArrowBackIcon sx={{ color: "black" }}  onClick={()=>navigate(-1)}/>
           </IconButton>
           <Typography variant="h6" sx={{ color: "black", fontWeight: "bold" }}>
             Change ID Login Password

@@ -11,14 +11,14 @@ import {
     Container,
     Grid,
   } from "@mui/material";
-  import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-  import CloudUploadIcon from "@mui/icons-material/CloudUpload";
-  
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import CloudUploadIcon from "@mui/icons-material/CloudUpload";
+import { useNavigate } from "react-router-dom";  
 
 const GameProblem = () => {
     const [description, setDescription] = useState("");
     const [image, setImage] = useState(null);
-  
+    const navigate=useNavigate();
     const handleImageChange = (event) => {
       const file = event.target.files[0];
       if (file) {
@@ -32,7 +32,7 @@ const GameProblem = () => {
       <AppBar position="static" sx={{ backgroundColor: "orange", boxShadow: 1 }}>
         <Toolbar>
           <IconButton edge="start">
-            <ArrowBackIcon sx={{ color: "black" }} />
+            <ArrowBackIcon sx={{ color: "black" }} onClick={()=>navigate(-1)}/>
           </IconButton>
           <Typography
             variant="h6"

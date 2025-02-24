@@ -14,10 +14,10 @@ import {
   import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
   import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 import { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 const RetrieveLogin = () => {
 const [image, setImage] = useState(null);
-
+const navigate = useNavigate();
   const handleImageChange = (event) => {
     const file = event.target.files[0];
     if (file) {
@@ -32,7 +32,7 @@ const [image, setImage] = useState(null);
       <AppBar position="static" sx={{ backgroundColor: "orange", boxShadow: 1 }}>
         <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
           <IconButton edge="start">
-            <ArrowBackIcon sx={{ color: "black" }} />
+            <ArrowBackIcon sx={{ color: "black" }} onClick={()=>navigate(-1)}/>
           </IconButton>
           <Typography variant="h6" sx={{ color: "black", fontWeight: "bold" }}>
             Retrieve Login ID Account
