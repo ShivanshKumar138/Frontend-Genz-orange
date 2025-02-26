@@ -48,7 +48,7 @@ const navigate = useNavigate();
         {[
           { label: "Bank Account Number", placeholder: "Please enter Bank Card Number" },
           { label: "IFSC Code", placeholder: "Please enter IFSC" },
-          { label: "ID GOAGAME", placeholder: "Please enter username" },
+          { label: "GAME ID", placeholder: "Please enter username" },
           { label: "Email", placeholder: "Please enter content" },
         ].map((field, index) => (
           <Box key={index} sx={{ mt: 2 }}>

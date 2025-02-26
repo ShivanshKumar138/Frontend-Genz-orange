@@ -22,7 +22,7 @@ import {
     const navigate = useNavigate();
   
     const supportOptions = [
-      { icon: <img src="assets/banners/c1.png" alt="Deposit Problem" width={30} height={30} />, text: "Deposit Problem", link: "/support" },
+      // { icon: <img src="assets/banners/c1.png" alt="Deposit Problem" width={30} height={30} />, text: "Deposit Problem", link: "/support" },
       { icon: <img src="assets/banners/c2.png" alt="Withdrawal Issues" width={30} height={30} />, text: "Withdrawal Issues", link: "/support" },
       { icon: <img src="assets/banners/c3.png" alt="Other issues" width={30} height={30} />, text: "Other issues", link: "/support" },
       { icon: <img src="assets/banners/c4.png" alt="24/7 Online Service" width={30} height={30} />, text: "24/7 Online Service", link: "https://direct.lc.chat/19015166/" },

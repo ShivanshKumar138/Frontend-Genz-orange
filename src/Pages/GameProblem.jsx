@@ -68,7 +68,7 @@ const GameProblem = () => {
         {/* ID GOAGAMES Field */}
         <Box sx={{ mt: 2 }}>
           <Typography variant="subtitle1" fontWeight="bold">
-            ID GOAGAMES <span style={{ color: "red" }}>*</span>
+            GAME ID <span style={{ color: "red" }}>*</span>
           </Typography>
           <TextField
             fullWidth
